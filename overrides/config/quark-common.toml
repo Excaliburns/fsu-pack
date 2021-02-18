@@ -113,7 +113,7 @@
 	"Soul Sandstone" = true
 	"Burn Vines" = true
 	"Quilted Wool" = true
-	"Compressed Blocks" = true
+	"Compressed Blocks" = false
 	Stools = true
 	Thatch = true
 	"Variant Chests" = true
@@ -532,37 +532,37 @@
 
 [world]
 	"New Stone Types" = true
-	"Lush Underground Biome" = true
+	"Lush Underground Biome" = false
 	"Big Dungeon" = true
-	Speleothems = true
+	Speleothems = false
 	"Elder Prismarine Underground Biome" = true
 	"Blossom Trees" = true
-	"Sandstone Underground Biome" = true
+	"Sandstone Underground Biome" = false
 	"Glowshroom Underground Biome" = true
-	"Permafrost Underground Biome" = true
+	"Permafrost Underground Biome" = false
 	"Underground Clay" = true
 	"Slime Underground Biome" = true
 	"Fairy Rings" = true
 	"Chorus Vegetation" = true
-	Crevices = true
+	Crevices = false
 	"Nether Obsidian Spikes" = true
-	"Mega Caves" = true
-	"Realistic World Gen" = true
+	"Mega Caves" = false
+	"Realistic World Gen" = false
 	Biotite = true
 	"Big Stone Clusters" = true
-	"Brimstone Underground Biome" = true
+	"Brimstone Underground Biome" = false
 	"Cave Crystal Underground Biome" = true
 	"Spiral Spires" = true
-	"Overgrown Underground Biome" = true
-	"Cave Roots" = true
-	"Spider Nest Underground Biome" = true
+	"Overgrown Underground Biome" = false
+	"Cave Roots" = false
+	"Spider Nest Underground Biome" = false
 	"Monster Box" = true
 
 	[world.monster_box]
 		#
 		#The chance for the monster box generator to try and place one in a chunk, 1 is 100%
 		#This can be higher than 100% if you want multiple per chunk, , 0 is 0%
-		"Chance Per Chunk" = 0.8
+		"Chance Per Chunk" = 0.4
 		"Min Mob Count" = 5
 		"Min Y" = 5
 		"Max Y" = 30
@@ -1968,7 +1968,7 @@
 		"Affect Leaves" = true
 
 [oddities]
-	"Totem Of Holding" = true
+	"Totem Of Holding" = false
 	Backpack = true
 	"Matrix Enchanting" = true
 	Magnets = true
