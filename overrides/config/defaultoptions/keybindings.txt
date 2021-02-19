@@ -1,0 +1,4 @@
+key_quark.keybind.autorun:key.keyboard.caps:CONTROL
+key_key.astralsorcery.disable_perk_abilities:key.keyboard.v:CONTROL
+key_key.curios.open.desc:key.keyboard.g:SHIFT
+key_keybind.simplyjetpacks.jetpack_gui:key.keyboard.j:SHIFT
