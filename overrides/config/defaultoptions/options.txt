@@ -1,4 +1,4 @@
-version:2584
+version:2586
 autoJump:false
 autoSuggestions:false
 chatColors:true
@@ -69,7 +69,7 @@ syncChunkWrites:true
 soundCategory_master:1.0
 soundCategory_music:0.25
 soundCategory_record:1.0
-soundCategory_weather:0.70
+soundCategory_weather:0.7
 soundCategory_block:1.0
 soundCategory_hostile:1.0
 soundCategory_neutral:1.0
