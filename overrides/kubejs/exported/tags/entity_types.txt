@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Feb 17, 2021 1:00:45 PM
+To refresh this file, delete it and run /reload command again! Last updated: Feb 19, 2021 8:59:43 AM
 
 #botania:cocoon/rare
 - minecraft:horse
@@ -40,7 +40,50 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:sheep
 
 #minecraft:beehive_inhabitors
+- resourcefulbees:nether_quartz_bee
+- resourcefulbees:ender_bee
+- resourcefulbees:dragon_bee
+- resourcefulbees:netherite_bee
+- resourcefulbees:gold_bee
+- resourcefulbees:skeleton_bee
+- resourcefulbees:diamond_bee
+- resourcefulbees:kitten_bee
+- resourcefulbees:zombie_bee
+- resourcefulbees:oreo_bee
+- resourcefulbees:coal_bee
+- resourcefulbees:iron_bee
+- resourcefulbees:lapis_bee
+- resourcefulbees:pigman_bee
+- resourcefulbees:rgbee_bee
+- resourcefulbees:slimy_bee
+- resourcefulbees:wither_bee
+- resourcefulbees:creeper_bee
+- resourcefulbees:emerald_bee
+- resourcefulbees:icy_bee
+- resourcefulbees:redstone_bee
 - minecraft:bee
+- productivebees:configurable_bee
+- productivebees:dye_bee
+- productivebees:lumber_bee
+- productivebees:quarry_bee
+- productivebees:rancher_bee
+- productivebees:hoarder_bee
+- productivebees:farmer_bee
+- productivebees:cupid_bee
+- productivebees:creeper_bee
+- productivebees:ashy_mining_bee
+- productivebees:blue_banded_bee
+- productivebees:green_carpenter_bee
+- productivebees:yellow_black_carpenter_bee
+- productivebees:chocolate_mining_bee
+- productivebees:digger_bee
+- productivebees:leafcutter_bee
+- productivebees:mason_bee
+- productivebees:neon_cuckoo_bee
+- productivebees:nomad_bee
+- productivebees:reed_bee
+- productivebees:resin_bee
+- productivebees:sweaty_bee
 
 #minecraft:skeletons
 - minecraft:skeleton
@@ -70,6 +113,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:vindicator
 - minecraft:illusioner
 - minecraft:witch
+
+#productivebees:ranchables
+- minecraft:cow
+- minecraft:sheep
+- minecraft:llama
 
 #industrialforegoing:mob_imprisonment_tool_blacklist
 

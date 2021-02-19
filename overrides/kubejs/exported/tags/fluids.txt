@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Feb 17, 2021 1:00:45 PM
+To refresh this file, delete it and run /reload command again! Last updated: Feb 19, 2021 8:59:43 AM
 
 #forge:oxygen
 - mekanism:oxygen
@@ -13,6 +13,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 #minecraft:water
 - minecraft:water
 - minecraft:flowing_water
+- productivebees:honey
+- productivebees:flowing_honey
 - create:flowing_honey
 - create:honey
 - create:flowing_chocolate
@@ -103,6 +105,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 #forge:steam
 - mekanism:steam
 - mekanism:flowing_steam
+- bigreactors:steam
+- bigreactors:steam_flowing
 
 #forge:hydrogen_chloride
 - mekanism:hydrogen_chloride
@@ -148,6 +152,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - pneumaticcraft:kerosene
 
 #forge:honey
+- resourcefulbees:honey
+- resourcefulbees:catnip_honey
+- productivebees:honey
 - create:flowing_honey
 - create:honey
 
