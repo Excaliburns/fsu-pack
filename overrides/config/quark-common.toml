@@ -1838,7 +1838,7 @@
 			"Spawn Cost" = 0.15
 			#
 			#Allowed values: [1,)
-			"Max Group Size" = 3
+			"Max Group Size" = 1
 
 			[mobs.wraith.spawn_config.biomes]
 				Biomes = ["minecraft:soul_sand_valley"]

@@ -25,10 +25,10 @@ onEvent('recipes', event => {
   event.recipes.mekanism.crushing(item.of('mana-and-artifice:vinteum_dust'), 'mana-and-artifice:vinteum_ingot')
 })
 
-onEvent('item.tags', event => {
-  // Get the #forge:cobblestone tag collection and add Diamond Ore to it
-  // event.get('forge:cobblestone').add('minecraft:diamond_ore')
-  
-  // Get the #forge:cobblestone tag collection and remove Mossy Cobblestone from it
-  // event.get('forge:cobblestone').remove('minecraft:mossy_cobblestone')
-})
+onEvent('item.entity_interact',  event => {
+  if(event.server 
+    && event.item.id.equals("industrialforegoing:mob_imprisonment_tool") 
+    && event.target.type.equals('minecraft:donkey')) {
+      event.cancel();
+  }
+});
