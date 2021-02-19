@@ -447,7 +447,7 @@
 	#(e.g. minecraft:grass)
 	blocksBlacklist = []
 	#If true, enables Silk Touch (gets the blocks itself rather than drops) on all Exchangers
-	doExchangersSilkTouch = true
+	doExchangersSilkTouch = false
 	#Set the energy unit shown on Powered Exchangers:
 	#'FE'     Forge Energy
 	#'RF'     Redstone Flux
