@@ -1,0 +1,20 @@
+{
+	id: "349214DDF0E93727",
+	group: "",
+	order_index: 1,
+	filename: "thermal_expansion",
+	title: "Thermal Expansion",
+	icon: "thermal:machine_furnace",
+	default_quest_shape: "",
+	quests: [{
+		x: 0.5d,
+		y: -0.5d,
+		dependencies: ["34497DAFC7B59AFB"],
+		id: "5E7C68AC1BEA6153",
+		tasks: [{
+			id: "1CC6166F266B13F5",
+			type: "item",
+			item: "thermal:machine_frame"
+		}]
+	}]
+}

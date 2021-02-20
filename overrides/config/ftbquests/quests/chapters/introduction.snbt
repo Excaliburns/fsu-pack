@@ -1,0 +1,336 @@
+{
+	id: "47AD5919606E07D0",
+	group: "",
+	order_index: 0,
+	filename: "introduction",
+	title: "Introduction",
+	icon: "minecraft:book",
+	subtitle: ["Learning the Basics!"],
+	default_quest_shape: "",
+	quests: [
+		{
+			x: 0.5d,
+			y: -0.5d,
+			subtitle: "This is a modpack made for FSU, it's a Vanilla Lite flavored pack with vanilla-enhancing mods and then some tech for the more advanced modded players! This questbook has quests to help you learn new things about modded minecraft and how to play!",
+			id: "319DA93BFB9CECE8",
+			tasks: [{
+				id: "5401B2A669C13FAE",
+				type: "checkmark",
+				title: "Welcome to FSU Blockheads!",
+				icon: "minecraft:player_head"
+			}],
+			rewards: [{
+				id: "6E2CBD92412824D5",
+				type: "item",
+				item: {
+					id: "akashictome:tome",
+					Count: 1b,
+					tag: {
+						"akashictome:is_morphing": 1b,
+						"akashictome:data": {
+							storagenetwork: {
+								id: "patchouli:guide_book",
+								Count: 1b,
+								tag: {
+									"patchouli:book": "storagenetwork:network_book"
+								}
+							},
+							integratedtunnels: {
+								id: "integrateddynamics:on_the_dynamics_of_integration",
+								Count: 1b
+							},
+							powah: {
+								id: "powah:book",
+								Count: 1b
+							},
+							resourcefulbees: {
+								id: "patchouli:guide_book",
+								Count: 1b,
+								tag: {
+									"patchouli:book": "resourcefulbees:fifty_shades_of_bees"
+								}
+							},
+							astralsorcery: {
+								id: "astralsorcery:tome",
+								Count: 1b
+							},
+							theoneprobe: {
+								id: "theoneprobe:probenote",
+								Count: 1b
+							},
+							ftbquests: {
+								id: "ftbquests:book",
+								Count: 1b
+							},
+							woot: {
+								id: "patchouli:guide_book",
+								Count: 1b,
+								tag: {
+									"akashictome:displayName": {
+										text: "Woot Guide"
+									},
+									"patchouli:book": "woot:wootguide",
+									"akashictome:is_morphing": 1b,
+									display: {
+										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Woot Guide"}]}'
+									}
+								}
+							},
+							productivebees: {
+								id: "patchouli:guide_book",
+								Count: 1b,
+								tag: {
+									"patchouli:book": "productivebees:guide"
+								}
+							},
+							silentgear: {
+								id: "silentgear:blueprint_book",
+								Count: 1b,
+								tag: {
+									Inventory: {}
+								}
+							},
+							botania: {
+								id: "botania:lexicon",
+								Count: 1b
+							},
+							bloodmagic: {
+								id: "patchouli:guide_book",
+								Count: 1b,
+								tag: {
+									"patchouli:book": "bloodmagic:guide"
+								}
+							},
+							thermal: {
+								id: "patchouli:guide_book",
+								Count: 1b,
+								tag: {
+									"patchouli:book": "thermal:guidebook"
+								}
+							}
+						}
+					}
+				}
+			}]
+		},
+		{
+			title: "Framing the Machines",
+			x: 2.5d,
+			y: -0.5d,
+			subtitle: "Create your first Thermal Expansion Machine Frame!",
+			dependencies: ["319DA93BFB9CECE8"],
+			id: "34497DAFC7B59AFB",
+			tasks: [{
+				id: "4DB66F117DF9E2F0",
+				type: "item",
+				item: "thermal:machine_frame",
+				consume_items: false
+			}],
+			rewards: [
+				{
+					id: "5F384D4A0AB7104E",
+					type: "item",
+					auto: "disabled",
+					item: "thermal:machine_frame"
+				},
+				{
+					id: "217F0226F7D39AE4",
+					type: "item",
+					auto: "disabled",
+					item: "thermal:rf_coil"
+				}
+			]
+		},
+		{
+			title: "Better than Chests!",
+			x: 2.0d,
+			y: 1.0d,
+			subtitle: "The foundation of your first AE2 network!",
+			dependencies: ["319DA93BFB9CECE8"],
+			id: "467204B3393A688D",
+			tasks: [{
+				id: "0CC1F3DB2F8F8E2A",
+				type: "item",
+				item: "appliedenergistics2:controller"
+			}],
+			rewards: [
+				{
+					id: "46383D54BF7F6006",
+					type: "item",
+					item: "appliedenergistics2:fluix_smart_dense_cable",
+					count: 16
+				},
+				{
+					id: "76E1B1880199BE65",
+					type: "item",
+					item: "appliedenergistics2:fluix_smart_cable",
+					count: 32
+				}
+			]
+		},
+		{
+			title: "The Final Foregoing",
+			x: 0.5d,
+			y: 1.5d,
+			subtitle: "Create a fluid extractor to get latex from wood, process the latex using the Latex Processor!",
+			dependencies: ["319DA93BFB9CECE8"],
+			id: "57A68560321476E7",
+			tasks: [
+				{
+					id: "4FC34842C67A110B",
+					type: "item",
+					item: "industrialforegoing:fluid_extractor"
+				},
+				{
+					id: "49A6E0E04124AFD1",
+					type: "item",
+					item: "industrialforegoing:latex_processing_unit"
+				}
+			],
+			rewards: [
+				{
+					id: "57E565A61F6310D7",
+					type: "item",
+					item: "industrialforegoing:plastic",
+					count: 16
+				},
+				{
+					id: "155E16CC4648CAE5",
+					type: "item",
+					item: "industrialforegoing:machine_frame_pity"
+				}
+			]
+		},
+		{
+			title: "Infuse Those Metals!",
+			x: -1.0d,
+			y: 1.0d,
+			subtitle: "Start Mekanism!",
+			dependencies: ["319DA93BFB9CECE8"],
+			id: "1D6B76BFE2C1691C",
+			tasks: [{
+				id: "4F02FEBCE79899DA",
+				type: "item",
+				item: "mekanism:metallurgic_infuser"
+			}],
+			rewards: [{
+				id: "0E5BD9C9FE1E098F",
+				type: "item",
+				item: "mekanism:alloy_infused",
+				count: 8
+			}]
+		},
+		{
+			title: "It's Over 9000 PSI!",
+			x: -1.5d,
+			y: -0.5d,
+			subtitle: "Start PneumaticCraft!",
+			dependencies: ["319DA93BFB9CECE8"],
+			id: "1C32035A78221330",
+			tasks: [{
+				id: "257FBDF5CFE6B611",
+				type: "item",
+				item: "pneumaticcraft:air_compressor"
+			}],
+			rewards: [{
+				id: "318590F7B8B7163D",
+				type: "item",
+				item: "minecraft:coal",
+				count: 64
+			}]
+		},
+		{
+			title: "The Final Frontier",
+			x: -4.5d,
+			y: -0.5d,
+			subtitle: "Mine the void!",
+			dependencies: [
+				"1C32035A78221330",
+				"1D6B76BFE2C1691C",
+				"7FD9E8DA10998B98"
+			],
+			id: "650A97AA8316C9CD",
+			tasks: [{
+				id: "42992E2564AFF72D",
+				type: "item",
+				item: "envirocore:litherite_crystal"
+			}],
+			rewards: [{
+				id: "5A5025F46407E815",
+				type: "item",
+				item: "envirocore:litherite_crystal",
+				count: 16
+			}]
+		},
+		{
+			title: "Red Magic",
+			x: -1.0d,
+			y: -2.0d,
+			subtitle: "Create a blood altar!",
+			dependencies: ["319DA93BFB9CECE8"],
+			id: "7FD9E8DA10998B98",
+			tasks: [{
+				id: "5C6076E79E0F1858",
+				type: "item",
+				item: "bloodmagic:altar"
+			}],
+			rewards: [{
+				id: "1D7440BF01EB0BD2",
+				type: "item",
+				item: "bloodmagic:blankslate",
+				count: 4
+			}]
+		},
+		{
+			title: "Star Magic!",
+			x: 0.5d,
+			y: -2.5d,
+			subtitle: "Harness the power of the night!",
+			dependencies: ["319DA93BFB9CECE8"],
+			id: "429C48C7FEE45264",
+			tasks: [{
+				id: "352FBEC7F6FFBFE0",
+				type: "item",
+				item: "astralsorcery:wand"
+			}],
+			rewards: [{
+				id: "2872D1C000F80220",
+				type: "item",
+				item: "astralsorcery:aquamarine",
+				count: 16
+			}]
+		},
+		{
+			title: "Not So Silent Tools",
+			x: 2.0d,
+			y: -2.0d,
+			subtitle: "I've heard these are better than diamond tools?",
+			dependencies: ["319DA93BFB9CECE8"],
+			id: "78441B8C71706FFD",
+			tasks: [{
+				id: "2D3F12F1FEFD0B46",
+				type: "item",
+				item: "silentgear:blueprint_paper"
+			}],
+			rewards: [{
+				id: "12F8C7DA5B8E5AC3",
+				type: "item",
+				item: "silentgear:blueprint_paper",
+				count: 4
+			}]
+		},
+		{
+			title: "AE2's Little Brother",
+			x: 1.5d,
+			y: 2.0d,
+			subtitle: "Basically the same thing as AE2, but different",
+			dependencies: ["319DA93BFB9CECE8"],
+			id: "62B8C67EFA92C863",
+			tasks: [{
+				id: "4A0332C9493AA736",
+				type: "item",
+				item: "refinedstorage:controller"
+			}]
+		}
+	]
+}

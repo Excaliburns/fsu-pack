@@ -1,0 +1,56 @@
+{
+	id: "35F44B58D369ABF4",
+	order_index: 0,
+	title: "Thermal Rewards",
+	loot_size: 1,
+	rewards: [
+		{
+			item: "thermal:enderium_ingot",
+			count: 4
+		},
+		{
+			item: "thermal:signalum_ingot",
+			count: 4
+		},
+		{
+			item: "thermal:lumium_ingot",
+			count: 4
+		},
+		{
+			item: "thermal:electrum_ingot",
+			count: 8
+		},
+		{
+			item: "thermal:invar_ingot",
+			count: 8
+		},
+		{
+			item: "mekanism:ingot_copper",
+			count: 16
+		},
+		{
+			item: "thermal:tin_ingot",
+			count: 16
+		},
+		{
+			item: "thermal:silver_ingot",
+			count: 16
+		},
+		{
+			item: "thermal:lead_ingot",
+			count: 16
+		},
+		{
+			item: "minecraft:iron_ingot",
+			count: 16
+		},
+		{
+			item: "minecraft:gold_ingot",
+			count: 16
+		},
+		{
+			item: "minecraft:redstone",
+			count: 32
+		}
+	]
+}
