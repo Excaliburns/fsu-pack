@@ -8,6 +8,8 @@ settings.logErroringRecipes = true
 console.info('Hello, World! (You will see this line every time server resources reload)')
 
 onEvent('recipes', event => {
+  event.shapeless('1x mana-and-artifice:guide_book', ['minecraft:book', 'mana-and-artifice:vinteum_ingot'])
+
   event.remove({id: 'buildinggadgets:gadget_exchanging'}) 
   
   // Mekanism
