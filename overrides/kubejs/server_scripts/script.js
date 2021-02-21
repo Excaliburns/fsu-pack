@@ -28,7 +28,7 @@ onEvent('recipes', event => {
     A: 'botania:gaia_ingot',
     B: 'astralsorcery:mantle',
     C: 'bloodmagic:soulgemgreater',
-    D: 'appliedenergistics2:singularity',
+    D: 'minecraft:nether_star',
     E: 'angelring:itemdiamondring'
   })
 
