@@ -87,53 +87,7 @@
 								id: "silentgear:blueprint_book",
 								Count: 1b,
 								tag: {
-									"akashictome:displayName": {
-										text: "Blueprint Book"
-									},
-									Inventory: {
-										Size: 54,
-										Items: [
-											{
-												Slot: 0,
-												id: "silentgear:rod_blueprint",
-												Count: 1b
-											},
-											{
-												Slot: 1,
-												id: "silentgear:pickaxe_blueprint",
-												Count: 1b
-											},
-											{
-												Slot: 2,
-												id: "silentgear:shovel_blueprint",
-												Count: 1b
-											},
-											{
-												Slot: 3,
-												id: "silentgear:axe_blueprint",
-												Count: 1b
-											},
-											{
-												Slot: 4,
-												id: "silentgear:knife_blueprint",
-												Count: 1b
-											},
-											{
-												Slot: 5,
-												id: "silentgear:katana_blueprint",
-												Count: 1b
-											},
-											{
-												Slot: 6,
-												id: "silentgear:shield_blueprint",
-												Count: 1b
-											}
-										]
-									},
-									"akashictome:is_morphing": 1b,
-									display: {
-										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Blueprint Book"}]}'
-									}
+									Inventory: {}
 								}
 							},
 							botania: {
@@ -161,8 +115,8 @@
 		},
 		{
 			title: "Framing the Machines",
-			x: 2.5d,
-			y: -0.5d,
+			x: 2.0d,
+			y: -2.0d,
 			subtitle: "Create your first Thermal Expansion Machine Frame!",
 			dependencies: ["319DA93BFB9CECE8"],
 			id: "34497DAFC7B59AFB",
@@ -189,8 +143,8 @@
 		},
 		{
 			title: "Better than Chests!",
-			x: 2.0d,
-			y: 1.0d,
+			x: 2.5d,
+			y: -0.5d,
 			subtitle: "The foundation of your first AE2 network!",
 			dependencies: ["319DA93BFB9CECE8"],
 			id: "467204B3393A688D",
@@ -323,8 +277,8 @@
 			rewards: [{
 				id: "1D7440BF01EB0BD2",
 				type: "item",
-				item: "bloodmagic:blankslate",
-				count: 4
+				item: "bloodmagic:soulsnare",
+				count: 16
 			}]
 		},
 		{
@@ -347,28 +301,9 @@
 			}]
 		},
 		{
-			title: "Not So Silent Tools",
-			x: 2.0d,
-			y: -2.0d,
-			subtitle: "I've heard these are better than diamond tools?",
-			dependencies: ["319DA93BFB9CECE8"],
-			id: "78441B8C71706FFD",
-			tasks: [{
-				id: "2D3F12F1FEFD0B46",
-				type: "item",
-				item: "silentgear:blueprint_paper"
-			}],
-			rewards: [{
-				id: "12F8C7DA5B8E5AC3",
-				type: "item",
-				item: "silentgear:blueprint_paper",
-				count: 4
-			}]
-		},
-		{
 			title: "AE2's Little Brother",
-			x: 1.5d,
-			y: 2.0d,
+			x: 2.0d,
+			y: 1.0d,
 			subtitle: "Basically the same thing as AE2, but different",
 			dependencies: ["319DA93BFB9CECE8"],
 			id: "62B8C67EFA92C863",

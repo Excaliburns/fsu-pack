@@ -8,28 +8,9 @@
 	default_quest_shape: "",
 	quests: [
 		{
-			x: -4.5d,
-			y: 0.0d,
-			description: ["For help on this section, please watch the great guide by Mischief of Mice! Check the discord for a link :)"],
-			dependencies: ["429C48C7FEE45264"],
-			dependency_requirement: "all_started",
-			id: "2EEF8FE4CDCD194D",
-			tasks: [{
-				id: "67648AA8D86A10FA",
-				type: "item",
-				item: "astralsorcery:altar_discovery"
-			}],
-			rewards: [{
-				id: "5C7951DB967314BC",
-				type: "item",
-				item: "astralsorcery:marble_raw",
-				count: 64
-			}]
-		},
-		{
 			x: -2.5d,
 			y: -1.0d,
-			dependencies: ["2EEF8FE4CDCD194D"],
+			dependencies: ["12C0C71BA3796AE8"],
 			id: "2FF0E710236ADB68",
 			tasks: [{
 				id: "235E1503E65871F6",
@@ -46,7 +27,7 @@
 		{
 			x: -2.5d,
 			y: 1.0d,
-			dependencies: ["2EEF8FE4CDCD194D"],
+			dependencies: ["12C0C71BA3796AE8"],
 			id: "4F59AE58A0E49271",
 			tasks: [{
 				id: "0D492A9550459BDF",
@@ -57,7 +38,7 @@
 		{
 			x: -3.5d,
 			y: 2.0d,
-			dependencies: ["2EEF8FE4CDCD194D"],
+			dependencies: ["12C0C71BA3796AE8"],
 			id: "2EE1A7263F79167D",
 			tasks: [{
 				id: "5A3B14499334D4CD",
@@ -463,6 +444,18 @@
 				type: "command",
 				command: "/say @p has completed Astral Sorcery! Give them a round of applause.",
 				player_command: false
+			}]
+		},
+		{
+			title: "Begin Astral!",
+			x: -4.0d,
+			y: 0.5d,
+			description: ["Check the discord for a link to the Mischief of Mice series on this mod!"],
+			dependencies: ["429C48C7FEE45264"],
+			id: "12C0C71BA3796AE8",
+			tasks: [{
+				id: "75D7CA8ED9AB1F4E",
+				type: "checkmark"
 			}]
 		}
 	]
