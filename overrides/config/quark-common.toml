@@ -534,7 +534,7 @@
 	"New Stone Types" = true
 	"Lush Underground Biome" = false
 	"Big Dungeon" = true
-	Speleothems = false
+	Speleothems = true
 	"Elder Prismarine Underground Biome" = true
 	"Blossom Trees" = true
 	"Sandstone Underground Biome" = false
@@ -544,7 +544,7 @@
 	"Slime Underground Biome" = true
 	"Fairy Rings" = true
 	"Chorus Vegetation" = true
-	Crevices = false
+	Crevices = true
 	"Nether Obsidian Spikes" = true
 	"Mega Caves" = false
 	"Realistic World Gen" = false
