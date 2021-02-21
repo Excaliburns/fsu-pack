@@ -442,7 +442,8 @@
 			rewards: [{
 				id: "249115306F67B2AF",
 				type: "command",
-				command: "/say @p has completed Astral Sorcery! Give them a round of applause.",
+				auto: "enabled",
+				command: "/say @p has completed the Astral Sorcery questline!",
 				player_command: false
 			}]
 		},
@@ -456,6 +457,13 @@
 			tasks: [{
 				id: "75D7CA8ED9AB1F4E",
 				type: "checkmark"
+			}],
+			rewards: [{
+				id: "3787438092871B6E",
+				type: "command",
+				auto: "enabled",
+				command: "/say @p has begun the Astral Sorcery questline!",
+				player_command: false
 			}]
 		}
 	]

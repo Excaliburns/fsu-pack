@@ -172,7 +172,7 @@
 			title: "The Final Foregoing",
 			x: 0.5d,
 			y: 1.5d,
-			subtitle: "Create a fluid extractor to get latex from wood, process the latex using the Latex Processor!",
+			subtitle: "Don't pollute with these plastics... Or the pink slime!",
 			dependencies: ["319DA93BFB9CECE8"],
 			id: "57A68560321476E7",
 			tasks: [
@@ -259,7 +259,7 @@
 				id: "5A5025F46407E815",
 				type: "item",
 				item: "envirocore:litherite_crystal",
-				count: 16
+				count: 8
 			}]
 		},
 		{

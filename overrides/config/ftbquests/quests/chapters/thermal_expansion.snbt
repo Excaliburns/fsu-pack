@@ -6,15 +6,548 @@
 	title: "Thermal Expansion",
 	icon: "thermal:machine_furnace",
 	default_quest_shape: "",
-	quests: [{
-		x: 0.5d,
-		y: -0.5d,
-		dependencies: ["34497DAFC7B59AFB"],
-		id: "5E7C68AC1BEA6153",
-		tasks: [{
-			id: "1CC6166F266B13F5",
-			type: "item",
-			item: "thermal:machine_frame"
-		}]
-	}]
+	quests: [
+		{
+			x: -0.5d,
+			y: 1.0d,
+			dependencies: ["4DB66F117DF9E2F0"],
+			id: "4AE4776073FC7B70",
+			tasks: [{
+				id: "6C846632CA726A40",
+				type: "checkmark",
+				title: "Begin Thermal Expansion!"
+			}],
+			rewards: [
+				{
+					id: "55BE9997114C1E0E",
+					type: "random",
+					table_id: 3887815223203703796L
+				},
+				{
+					id: "541F3CA97EC7A4CF",
+					type: "command",
+					auto: "enabled",
+					command: "/say @p has begun the Thermal Expansion questline!",
+					player_command: false
+				}
+			]
+		},
+		{
+			x: 2.0d,
+			y: 1.0d,
+			dependencies: ["4AE4776073FC7B70"],
+			id: "471F7BEA916D92F1",
+			tasks: [{
+				id: "359EC7AFE4A7A6D5",
+				type: "item",
+				item: "thermal:machine_frame"
+			}],
+			rewards: [{
+				id: "62D6F279E0A2D4EC",
+				type: "random",
+				table_id: 3887815223203703796L
+			}]
+		},
+		{
+			x: 3.5d,
+			y: 1.0d,
+			dependencies: ["471F7BEA916D92F1"],
+			id: "28B0789419AA8244",
+			tasks: [{
+				id: "51D5CF9E6041D760",
+				type: "item",
+				item: "thermal:machine_pulverizer"
+			}],
+			rewards: [{
+				id: "01CE02DE7FDA9E69",
+				type: "random",
+				table_id: 3887815223203703796L
+			}]
+		},
+		{
+			x: 3.5d,
+			y: -1.0d,
+			dependencies: ["471F7BEA916D92F1"],
+			id: "79CBA18110E7E4A7",
+			tasks: [{
+				id: "47EA2EA56FD60D8B",
+				type: "item",
+				item: "thermal:machine_crucible"
+			}],
+			rewards: [{
+				id: "04664DF0961500DE",
+				type: "random",
+				table_id: 3887815223203703796L
+			}]
+		},
+		{
+			x: 5.0d,
+			y: -1.0d,
+			dependencies: ["79CBA18110E7E4A7"],
+			id: "02FDAC534DCBBE18",
+			tasks: [{
+				id: "11D2C56634B7BC04",
+				type: "item",
+				item: "thermal:machine_bottler"
+			}],
+			rewards: [{
+				id: "22E3A6C9E0CED56A",
+				type: "random",
+				table_id: 3887815223203703796L
+			}]
+		},
+		{
+			x: 3.5d,
+			y: 3.0d,
+			dependencies: ["471F7BEA916D92F1"],
+			id: "2D1BEFF244E9F0F7",
+			tasks: [{
+				id: "59CC2AFCC9693C75",
+				type: "item",
+				item: "thermal:machine_smelter"
+			}],
+			rewards: [{
+				id: "4BDD643DAC29CDF5",
+				type: "random",
+				table_id: 3887815223203703796L
+			}]
+		},
+		{
+			x: 5.0d,
+			y: 1.0d,
+			dependencies: [
+				"28B0789419AA8244",
+				"2D1BEFF244E9F0F7"
+			],
+			id: "5554A25078549038",
+			tasks: [{
+				id: "4666F30F4D56E4F3",
+				type: "item",
+				item: "thermal:signalum_ingot"
+			}],
+			rewards: [{
+				id: "605B543701CC2589",
+				type: "random",
+				table_id: 3887815223203703796L
+			}]
+		},
+		{
+			x: 5.0d,
+			y: 2.0d,
+			dependencies: [
+				"28B0789419AA8244",
+				"2D1BEFF244E9F0F7"
+			],
+			id: "417AAE677815B562",
+			tasks: [{
+				id: "7FF0B1DAAF40891F",
+				type: "item",
+				item: "thermal:enderium_ingot"
+			}],
+			rewards: [{
+				id: "1EBB3BFD4E5CECAF",
+				type: "random",
+				table_id: 3887815223203703796L
+			}]
+		},
+		{
+			x: 5.0d,
+			y: 3.0d,
+			dependencies: [
+				"28B0789419AA8244",
+				"2D1BEFF244E9F0F7"
+			],
+			id: "1BA13DDEB1A85214",
+			tasks: [{
+				id: "35024AFA860B8F03",
+				type: "item",
+				item: "thermal:lumium_ingot"
+			}],
+			rewards: [{
+				id: "3AD5131E6F4B5715",
+				type: "random",
+				table_id: 3887815223203703796L
+			}]
+		},
+		{
+			x: 5.0d,
+			y: 4.0d,
+			dependencies: ["2D1BEFF244E9F0F7"],
+			id: "44390D7231293D07",
+			tasks: [{
+				id: "5CE5033A4E760842",
+				type: "item",
+				item: "thermal:invar_ingot"
+			}],
+			rewards: [{
+				id: "5B111A75D77EDA59",
+				type: "random",
+				table_id: 3887815223203703796L
+			}]
+		},
+		{
+			x: 5.0d,
+			y: 5.0d,
+			dependencies: ["2D1BEFF244E9F0F7"],
+			id: "305978C99E7A73BF",
+			tasks: [{
+				id: "5B36103D7CCCC7FA",
+				type: "item",
+				item: "thermal:electrum_ingot"
+			}],
+			rewards: [{
+				id: "0215070357D32134",
+				type: "random",
+				table_id: 3887815223203703796L
+			}]
+		},
+		{
+			x: 6.5d,
+			y: 3.0d,
+			dependencies: [
+				"5554A25078549038",
+				"417AAE677815B562",
+				"1BA13DDEB1A85214",
+				"44390D7231293D07",
+				"305978C99E7A73BF"
+			],
+			id: "7D7696FB9AB940E2",
+			tasks: [{
+				id: "1A1941B4DE2E44FD",
+				type: "checkmark",
+				title: "Master of the Alloys!"
+			}],
+			rewards: [{
+				id: "4B8810418AA5DE22",
+				type: "random",
+				table_id: 9057105238619855697L
+			}]
+		},
+		{
+			x: 8.0d,
+			y: 1.0d,
+			dependencies: ["7D7696FB9AB940E2"],
+			id: "20AA00404132B052",
+			tasks: [{
+				id: "564FC323415C67AA",
+				type: "item",
+				item: "thermal:upgrade_augment_1"
+			}],
+			rewards: [{
+				id: "5522BCC5ADE5FCA4",
+				type: "xp_levels",
+				xp_levels: 5
+			}]
+		},
+		{
+			x: 8.0d,
+			y: 3.0d,
+			dependencies: ["7D7696FB9AB940E2"],
+			id: "247373FB1FBE9534",
+			tasks: [{
+				id: "43FCE8F35396C718",
+				type: "item",
+				item: "thermal:upgrade_augment_2"
+			}],
+			rewards: [{
+				id: "453B299C42E8979E",
+				type: "xp_levels",
+				xp_levels: 5
+			}]
+		},
+		{
+			x: 8.0d,
+			y: 5.0d,
+			dependencies: ["7D7696FB9AB940E2"],
+			id: "36689A82137715C8",
+			tasks: [{
+				id: "65C4EA7B3029414F",
+				type: "item",
+				item: "thermal:upgrade_augment_3"
+			}],
+			rewards: [{
+				id: "270E03753AC44C62",
+				type: "xp_levels",
+				xp_levels: 5
+			}]
+		},
+		{
+			x: 3.5d,
+			y: 2.0d,
+			dependencies: ["471F7BEA916D92F1"],
+			id: "5B69F539C3BFCF81",
+			tasks: [{
+				id: "5450B8117B3A42A9",
+				type: "item",
+				item: "thermal:machine_sawmill"
+			}],
+			rewards: [{
+				id: "407CCC2D60AFD33D",
+				type: "random",
+				table_id: 3887815223203703796L
+			}]
+		},
+		{
+			x: 2.5d,
+			y: 3.5d,
+			dependencies: ["471F7BEA916D92F1"],
+			id: "5F422BFA915FF80B",
+			tasks: [{
+				id: "02CD2F843EA08EA2",
+				type: "item",
+				item: "thermal:machine_insolator"
+			}],
+			rewards: [{
+				id: "71DD710E8686D3C4",
+				type: "random",
+				table_id: 3887815223203703796L
+			}]
+		},
+		{
+			x: 0.5d,
+			y: 3.0d,
+			dependencies: ["471F7BEA916D92F1"],
+			id: "4359B378574A1B0A",
+			tasks: [{
+				id: "1963D40756B3E9B8",
+				type: "item",
+				item: "thermal:machine_centrifuge"
+			}],
+			rewards: [{
+				id: "78A7B8C59974FD9E",
+				type: "random",
+				table_id: 3887815223203703796L
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 2.0d,
+			dependencies: ["471F7BEA916D92F1"],
+			id: "2900FEC092E8D2A3",
+			tasks: [{
+				id: "02AF89EAF8FF4B2D",
+				type: "item",
+				item: "thermal:machine_press"
+			}],
+			rewards: [{
+				id: "7A1608D522096944",
+				type: "random",
+				table_id: 3887815223203703796L
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 0.0d,
+			dependencies: ["471F7BEA916D92F1"],
+			id: "5B7D000B9B11BB8A",
+			tasks: [{
+				id: "18C1D8CFA9EBA0FC",
+				type: "item",
+				item: "thermal:machine_chiller"
+			}],
+			rewards: [{
+				id: "7A70E58F8CFA775D",
+				type: "random",
+				table_id: 3887815223203703796L
+			}]
+		},
+		{
+			x: 0.5d,
+			y: -1.0d,
+			dependencies: ["471F7BEA916D92F1"],
+			id: "2000FB9208BBF723",
+			tasks: [{
+				id: "57EEDA2BD76847A0",
+				type: "item",
+				item: "thermal:machine_refinery"
+			}],
+			rewards: [{
+				id: "6053F4850F398E95",
+				type: "random",
+				table_id: 3887815223203703796L
+			}]
+		},
+		{
+			x: 1.5d,
+			y: -1.5d,
+			dependencies: ["471F7BEA916D92F1"],
+			id: "2AA99E532D77F991",
+			tasks: [{
+				id: "3C63AEDD27904D9B",
+				type: "item",
+				item: "thermal:machine_pyrolyzer"
+			}],
+			rewards: [{
+				id: "5BAE36BA6AE36B4A",
+				type: "random",
+				table_id: 3887815223203703796L
+			}]
+		},
+		{
+			x: 2.5d,
+			y: -1.5d,
+			dependencies: ["471F7BEA916D92F1"],
+			id: "550FC24F41CB03E5",
+			tasks: [{
+				id: "1C0535DA8A72E5DA",
+				type: "item",
+				item: "thermal:machine_brewer"
+			}],
+			rewards: [{
+				id: "73EB9257664FE20C",
+				type: "random",
+				table_id: 3887815223203703796L
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 3.5d,
+			dependencies: ["471F7BEA916D92F1"],
+			id: "3D379DD2C201069A",
+			tasks: [{
+				id: "4B453EE80F058224",
+				type: "item",
+				item: "thermal:machine_crafter"
+			}],
+			rewards: [{
+				id: "070C7271E24CF928",
+				type: "random",
+				table_id: 3887815223203703796L
+			}]
+		},
+		{
+			x: -2.0d,
+			y: -1.5d,
+			dependencies: ["4AE4776073FC7B70"],
+			id: "19B890F017D8456D",
+			tasks: [{
+				id: "6978E8CD6AFC977E",
+				type: "item",
+				item: "pneumaticcraft:pneumatic_dynamo"
+			}],
+			rewards: [{
+				id: "103CA4DEE39BDFC3",
+				type: "random",
+				table_id: 3887815223203703796L
+			}]
+		},
+		{
+			x: -2.0d,
+			y: -0.5d,
+			dependencies: ["4AE4776073FC7B70"],
+			id: "16BA7D8A795FB79B",
+			tasks: [{
+				id: "108A0EB47E48F524",
+				type: "item",
+				item: "thermal:dynamo_stirling"
+			}],
+			rewards: [{
+				id: "59B3F2A88895300A",
+				type: "random",
+				table_id: 3887815223203703796L
+			}]
+		},
+		{
+			x: -2.0d,
+			y: 0.5d,
+			dependencies: ["4AE4776073FC7B70"],
+			id: "2B3B87BAB387E3B0",
+			tasks: [{
+				id: "79A31107DF432EAF",
+				type: "item",
+				item: "thermal:dynamo_compression"
+			}],
+			rewards: [{
+				id: "5F8F09D9C923CBAF",
+				type: "random",
+				table_id: 3887815223203703796L
+			}]
+		},
+		{
+			x: -2.0d,
+			y: 1.5d,
+			dependencies: ["4AE4776073FC7B70"],
+			id: "6A2DD6ED37BFF6D6",
+			tasks: [{
+				id: "25703EAC1AC696EA",
+				type: "item",
+				item: "thermal:dynamo_magmatic"
+			}],
+			rewards: [{
+				id: "7B74DCD913EDE25D",
+				type: "random",
+				table_id: 3887815223203703796L
+			}]
+		},
+		{
+			x: -2.0d,
+			y: 2.5d,
+			dependencies: ["4AE4776073FC7B70"],
+			id: "377B960F7C9B2846",
+			tasks: [{
+				id: "17660822AF2890AA",
+				type: "item",
+				item: "thermal:dynamo_numismatic"
+			}],
+			rewards: [{
+				id: "4B20F54E2AD8AAC9",
+				type: "random",
+				table_id: 3887815223203703796L
+			}]
+		},
+		{
+			x: -2.0d,
+			y: 3.5d,
+			dependencies: ["4AE4776073FC7B70"],
+			id: "1887DD09271EE16A",
+			tasks: [{
+				id: "33BDB370D67E8916",
+				type: "item",
+				item: "thermal:dynamo_lapidary"
+			}],
+			rewards: [{
+				id: "301041F26FBDF119",
+				type: "random",
+				table_id: 3887815223203703796L
+			}]
+		},
+		{
+			x: 2.0d,
+			y: 6.5d,
+			dependencies: [
+				"1887DD09271EE16A",
+				"377B960F7C9B2846",
+				"6A2DD6ED37BFF6D6",
+				"2B3B87BAB387E3B0",
+				"16BA7D8A795FB79B",
+				"19B890F017D8456D",
+				"20AA00404132B052",
+				"247373FB1FBE9534",
+				"36689A82137715C8",
+				"5B69F539C3BFCF81",
+				"5F422BFA915FF80B",
+				"3D379DD2C201069A",
+				"4359B378574A1B0A",
+				"2900FEC092E8D2A3",
+				"5B7D000B9B11BB8A",
+				"2000FB9208BBF723",
+				"2AA99E532D77F991",
+				"550FC24F41CB03E5",
+				"02FDAC534DCBBE18"
+			],
+			id: "4FD2A5C392549F97",
+			tasks: [{
+				id: "332D2BC6935EE187",
+				type: "checkmark",
+				title: "Clout!"
+			}],
+			rewards: [{
+				id: "54724AB8D87B7824",
+				type: "command",
+				auto: "enabled",
+				command: "/say @p has completed the Thermal Expansion questline!",
+				player_command: false
+			}]
+		}
+	]
 }
