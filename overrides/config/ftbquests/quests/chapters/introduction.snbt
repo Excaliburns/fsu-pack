@@ -87,7 +87,53 @@
 								id: "silentgear:blueprint_book",
 								Count: 1b,
 								tag: {
-									Inventory: {}
+									"akashictome:displayName": {
+										text: "Blueprint Book"
+									},
+									Inventory: {
+										Size: 54,
+										Items: [
+											{
+												Slot: 0,
+												id: "silentgear:rod_blueprint",
+												Count: 1b
+											},
+											{
+												Slot: 1,
+												id: "silentgear:pickaxe_blueprint",
+												Count: 1b
+											},
+											{
+												Slot: 2,
+												id: "silentgear:shovel_blueprint",
+												Count: 1b
+											},
+											{
+												Slot: 3,
+												id: "silentgear:axe_blueprint",
+												Count: 1b
+											},
+											{
+												Slot: 4,
+												id: "silentgear:knife_blueprint",
+												Count: 1b
+											},
+											{
+												Slot: 5,
+												id: "silentgear:katana_blueprint",
+												Count: 1b
+											},
+											{
+												Slot: 6,
+												id: "silentgear:shield_blueprint",
+												Count: 1b
+											}
+										]
+									},
+									"akashictome:is_morphing": 1b,
+									display: {
+										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Blueprint Book"}]}'
+									}
 								}
 							},
 							botania: {
