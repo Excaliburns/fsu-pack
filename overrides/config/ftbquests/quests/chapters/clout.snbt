@@ -1,0 +1,157 @@
+{
+	id: "7C808815EA366545",
+	group: "",
+	order_index: 10,
+	filename: "clout",
+	title: "Clout",
+	icon: "minecraft:nether_star",
+	default_quest_shape: "",
+	quests: [
+		{
+			x: -5.5d,
+			y: -2.0d,
+			subtitle: "You have mastered the machines of Thermal Expansion!",
+			dependencies: ["4FD2A5C392549F97"],
+			id: "402F5642A302190E",
+			tasks: [{
+				id: "50A9D355E71B2CDE",
+				type: "checkmark",
+				title: "Thermal Master"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: -2.0d,
+			subtitle: "You have mastered the stars and harnessed the power of the night!",
+			dependencies: ["3CCEF7923E8ADF4E"],
+			id: "071495AD1B043EA1",
+			tasks: [{
+				id: "16E64EB0722421DB",
+				type: "checkmark",
+				title: "Astral Master"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: -2.0d,
+			subtitle: "You have mastered the magic of self-sacrifice and blood!",
+			dependencies: ["2E0505AA098EB84E"],
+			id: "083EECDA3AFBCF86",
+			tasks: [{
+				id: "3811A715920A8225",
+				type: "checkmark",
+				title: "Blood Magic Master"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -2.0d,
+			subtitle: "You have become a master of storage logistics and auto-crafting!",
+			dependencies: ["5C1436B42145847A"],
+			id: "611B8D24FBBC88D7",
+			tasks: [{
+				id: "73CEEE3D067542EC",
+				type: "checkmark",
+				title: "Applied Energistics 2 Master"
+			}]
+		},
+		{
+			x: 0.5d,
+			y: -2.0d,
+			subtitle: "You have mastered the machines of Refined Storage!",
+			dependencies: ["2808D37EABDDDA7F"],
+			id: "521CFC11F003A6D1",
+			tasks: [{
+				id: "45ABFF94C59961D3",
+				type: "checkmark",
+				title: "Refined Storage Master"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -2.0d,
+			subtitle: "You have mastered the machines of Mekanism and the fusing of the atom!",
+			dependencies: ["3865102CA46CC881"],
+			id: "6B6E46B4949A885A",
+			tasks: [{
+				id: "335C305A8B7F5A69",
+				type: "checkmark",
+				title: "Mekanism Master"
+			}]
+		},
+		{
+			x: 3.5d,
+			y: -2.0d,
+			subtitle: "You have mastered the art of pressurizing air and compressing the atmosphere!",
+			dependencies: ["3865FE585ED8C3C6"],
+			id: "789AAEA15AE2380A",
+			tasks: [{
+				id: "78A4B7548BFE68F3",
+				type: "checkmark",
+				title: "PneumaticCraft Master"
+			}]
+		},
+		{
+			x: 5.0d,
+			y: -2.0d,
+			subtitle: "You have mastered the machines of Industrial Foregoing!",
+			dependencies: ["3576F60F04490E0E"],
+			id: "25FBAC267580C5C7",
+			tasks: [{
+				id: "254A0DE262C39A01",
+				type: "checkmark",
+				title: "Industrial Foregoing Master"
+			}]
+		},
+		{
+			x: 6.5d,
+			y: -2.0d,
+			subtitle: "You have mastered the art of mining the void and gathering materials!",
+			dependencies: ["76CEB55842067130"],
+			id: "4A6122115DDA6704",
+			tasks: [{
+				id: "42632060261A9A0E",
+				type: "checkmark",
+				title: "Environmental Tech Master"
+			}]
+		},
+		{
+			x: 0.5d,
+			y: 0.5d,
+			subtitle: "Congratulations! You've finished all of the quests we have to offer! Now go and perfect your base!",
+			dependencies: [
+				"402F5642A302190E",
+				"071495AD1B043EA1",
+				"083EECDA3AFBCF86",
+				"611B8D24FBBC88D7",
+				"521CFC11F003A6D1",
+				"6B6E46B4949A885A",
+				"789AAEA15AE2380A",
+				"25FBAC267580C5C7",
+				"4A6122115DDA6704"
+			],
+			id: "2EDF6DDE67CA6FCE",
+			tasks: [{
+				id: "07BE337A968E47B2",
+				type: "checkmark",
+				title: "100% Quest Completion!"
+			}],
+			rewards: [
+				{
+					id: "7DD9E89498A4B1BE",
+					type: "command",
+					auto: "enabled",
+					command: "/say @p has finished all of the quests available! Give them a round of applause!",
+					player_command: false
+				},
+				{
+					id: "4391FD7E87AAA65D",
+					type: "command",
+					icon: "quark:diamond_heart",
+					command: "/ftbranks add @p questmaster",
+					player_command: false
+				}
+			]
+		}
+	]
+}
