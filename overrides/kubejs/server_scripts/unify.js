@@ -170,12 +170,6 @@ events.listen('block.tags', event => {
     event.get('forge:ores').add('mana-and-artifice:vinteum_ore')
     event.get('forge:ores').add('appliedenergistics2:quartz_ore')
     event.get('forge:ores').add('appliedenergistics2:charged_quartz_ore')
-
-    event.get('minecraft:base_stone_overworld').add([
-        'extcaves:lavastone',
-        'extcaves:oldstone',
-        'extcaves:brokenstone'
-    ])
 })
 
 events.listen('fluid.tags', event => {
