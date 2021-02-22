@@ -29,6 +29,13 @@
 				id: "731509FF3D1A4C54",
 				type: "checkmark",
 				title: "Mekanism!"
+			}],
+			rewards: [{
+				id: "7DF850F36DA0DA40",
+				type: "command",
+				auto: "enabled",
+				command: "/say @p has begun the Mekanism questline!",
+				player_command: false
 			}]
 		},
 		{
