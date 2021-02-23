@@ -56,6 +56,8 @@ onEvent('recipes', event => {
   event.recipes.mekanism.enriching(item.of('create:crushed_zinc_ore', 2), '#forge:ores/zinc')
   
   event.recipes.mekanism.crushing(item.of('mana-and-artifice:vinteum_dust'), 'mana-and-artifice:vinteum_ingot')
+
+  event.recipes.mekanism.enriching(item.of('mekanism:dust_uranium', 2), '#forge:ores/yellorite')
 })
 
 onEvent('item.entity_interact',  event => {
