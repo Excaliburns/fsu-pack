@@ -3,7 +3,7 @@
     "version": "1.16.5",
     "modLoaders": [
       {
-        "id": "forge-36.0.42",
+        "id": "forge-36.0.39",
         "primary": true
       }
     ]
@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "FSU Blockheads",
-  "version": "1.3.2",
+  "version": "1.4",
   "author": "Tut",
   "files": [
     {
@@ -26,7 +26,7 @@
     },
     {
       "projectID": 281849,
-      "fileID": 3185422,
+      "fileID": 3214375,
       "required": true
     },
     {
@@ -36,7 +36,7 @@
     },
     {
       "projectID": 416089,
-      "fileID": 3209402,
+      "fileID": 3221404,
       "required": true
     },
     {
@@ -71,7 +71,7 @@
     },
     {
       "projectID": 358191,
-      "fileID": 3172839,
+      "fileID": 3223408,
       "required": true
     },
     {
@@ -81,7 +81,7 @@
     },
     {
       "projectID": 69118,
-      "fileID": 3114135,
+      "fileID": 3215383,
       "required": true
     },
     {
@@ -121,7 +121,7 @@
     },
     {
       "projectID": 404465,
-      "fileID": 3194623,
+      "fileID": 3214262,
       "required": true
     },
     {
@@ -166,7 +166,7 @@
     },
     {
       "projectID": 245755,
-      "fileID": 3098215,
+      "fileID": 3222129,
       "required": true
     },
     {
@@ -181,7 +181,7 @@
     },
     {
       "projectID": 261924,
-      "fileID": 3098206,
+      "fileID": 3222141,
       "required": true
     },
     {
@@ -216,7 +216,7 @@
     },
     {
       "projectID": 297039,
-      "fileID": 3212487,
+      "fileID": 3221852,
       "required": true
     },
     {
@@ -336,12 +336,12 @@
     },
     {
       "projectID": 238086,
-      "fileID": 3211037,
+      "fileID": 3222777,
       "required": true
     },
     {
       "projectID": 377897,
-      "fileID": 3213778,
+      "fileID": 3216370,
       "required": true
     },
     {
@@ -356,12 +356,12 @@
     },
     {
       "projectID": 243121,
-      "fileID": 3208541,
+      "fileID": 3221260,
       "required": true
     },
     {
       "projectID": 266515,
-      "fileID": 3204945,
+      "fileID": 3223241,
       "required": true
     },
     {
@@ -371,7 +371,7 @@
     },
     {
       "projectID": 419699,
-      "fileID": 3208686,
+      "fileID": 3222916,
       "required": true
     },
     {
@@ -381,7 +381,7 @@
     },
     {
       "projectID": 250398,
-      "fileID": 3200753,
+      "fileID": 3223560,
       "required": true
     },
     {
@@ -401,7 +401,7 @@
     },
     {
       "projectID": 289412,
-      "fileID": 3211891,
+      "fileID": 3217206,
       "required": true
     },
     {
@@ -426,7 +426,7 @@
     },
     {
       "projectID": 335673,
-      "fileID": 3161863,
+      "fileID": 3223717,
       "required": true
     },
     {
@@ -561,7 +561,7 @@
     },
     {
       "projectID": 287342,
-      "fileID": 3204888,
+      "fileID": 3223141,
       "required": true
     },
     {
@@ -591,7 +591,7 @@
     },
     {
       "projectID": 388172,
-      "fileID": 3195959,
+      "fileID": 3224454,
       "required": true
     },
     {
@@ -691,7 +691,7 @@
     },
     {
       "projectID": 347706,
-      "fileID": 3215136,
+      "fileID": 3140151,
       "required": true
     },
     {
