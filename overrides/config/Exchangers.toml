@@ -435,8 +435,9 @@
 [misc]
 	#Certain blocks might be blacklisted by Exchangers if they're Tile Entities.
 	#Put a list of block registry names that you wish to be whitelisted from Exchangers.
-	#(e.g. thermal:energy_cell)
-	blocksWhitelist = ["tconstruct:seared"]
+	#Separate each entry with semicolon.
+	#(e.g. "tconstruct:seared;thermal:energy_cell;minecraft:conduit")
+	blocksWhitelist = "tconstruct:seared"
 	#If true, allows the Holding Enchantment from CoFH Core to be used on Powered Exchangers
 	#Calculation formula: Base Energy + (Base Energy * Enchantment Level / 2)
 	holdingEnchantment = true
@@ -444,8 +445,9 @@
 	unbreakingPoweredExchangers = true
 	#Put a list of block registry names that you wish to be blacklisted from Exchangers.
 	#Note: Blacklisting a block will prevent it from being selected or being exchanged.
-	#(e.g. minecraft:grass)
-	blocksBlacklist = []
+	#Separate each entry with semicolon.
+	#(e.g. "minecraft:grass;minecraft:cake;minecraft:dragon_egg")
+	blocksBlacklist = ""
 	#If true, enables Silk Touch (gets the blocks itself rather than drops) on all Exchangers
 	doExchangersSilkTouch = false
 	#Set the energy unit shown on Powered Exchangers:

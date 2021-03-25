@@ -87,6 +87,10 @@
 	damageFactorLevels = 10
 	#If true, gear breaks permanently, like vanilla tools and armor
 	breaksPermanently = false
+	#If set to false all conversion recipes (type 'silentgear:conversion') will be disabled
+	#An example of a conversion recipe is placing a vanilla stone pickaxe into a crafting grid to make a Silent Gear stone pickaxe
+	#Note: This also affects conversion recipes added by data packs and other mods
+	allowConversionRecipes = true
 
 	[gear.prospector_hammer]
 		#The range in blocks the prospector hammer will search for blocks of interest
@@ -167,12 +171,6 @@
 		#Range: 0 ~ 1000
 		tryCount = 16
 
-[compat]
-
-	[compat.mineAndSlash]
-		#Enable compatibility with the Mine and Slash mod, if installed
-		enabled = true
-
 [debug]
 
 	[debug.logging]
@@ -184,4 +182,6 @@
 		#Log information on construction of gear and part models, as well as textures they attempt to load.
 		#This is intended to help find and fix rare issues that some users are experiencing.
 		modelAndTexture = true
+		#Log details about certain features being adding to biomes and other world generator details
+		worldGen = true
 
