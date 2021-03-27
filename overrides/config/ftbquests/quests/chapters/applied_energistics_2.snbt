@@ -393,7 +393,7 @@
 			tasks: [{
 				id: "565C52D93EC05E06",
 				type: "item",
-				item: "refinedstorage:disk_drive"
+				item: "appliedenergistics2:drive"
 			}],
 			rewards: [{
 				id: "7E5DDD3C14FC9ABD",

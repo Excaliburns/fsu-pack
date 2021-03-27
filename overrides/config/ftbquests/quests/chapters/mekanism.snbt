@@ -774,7 +774,8 @@
 				"37533150053606AE",
 				"5E58700B6739AB03",
 				"3160BAF3019624B3",
-				"5AC9DCA2339F458E"
+				"5AC9DCA2339F458E",
+				"4F52F00AE783F131"
 			],
 			id: "3865102CA46CC881",
 			tasks: [{
@@ -788,6 +789,83 @@
 				auto: "enabled",
 				command: "/say @p has completed the Mekanism questline!",
 				player_command: false
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -3.0d,
+			dependencies: ["3586F13AAD2C3C71"],
+			id: "73BF9770693C6AB3",
+			tasks: [
+				{
+					id: "250ECADA97FC3B98",
+					type: "item",
+					item: "mekanismgenerators:fission_reactor_casing"
+				},
+				{
+					id: "619C15E80210EBD3",
+					type: "item",
+					item: "mekanismgenerators:fission_reactor_port"
+				},
+				{
+					id: "66D90DD149E15623",
+					type: "item",
+					item: "mekanismgenerators:fission_fuel_assembly"
+				},
+				{
+					id: "617721D4F5422DCC",
+					type: "item",
+					item: "mekanismgenerators:control_rod_assembly"
+				}
+			],
+			rewards: [{
+				id: "66B088B2E27A4A2E",
+				type: "item",
+				item: "mekanism:pellet_polonium"
+			}]
+		},
+		{
+			title: "Shifting Phases",
+			x: 1.0d,
+			y: -5.0d,
+			subtitle: "Turn Polonium into Antimatter!",
+			dependencies: ["73BF9770693C6AB3"],
+			id: "27B0E082D703731A",
+			tasks: [
+				{
+					id: "23C1E2BBD3C5ECBF",
+					type: "item",
+					item: "mekanism:sps_casing"
+				},
+				{
+					id: "1B7FE502BACFD2CE",
+					type: "item",
+					item: "mekanism:sps_port"
+				}
+			],
+			rewards: [{
+				id: "0D4B7A112211F8E9",
+				type: "item",
+				item: "mekanism:pellet_antimatter"
+			}]
+		},
+		{
+			title: "The Dark Side",
+			x: 1.0d,
+			y: -7.0d,
+			subtitle: "Create Antimatter!",
+			dependencies: ["27B0E082D703731A"],
+			id: "4F52F00AE783F131",
+			tasks: [{
+				id: "4BFD552F59604DC2",
+				type: "item",
+				item: "mekanism:pellet_antimatter"
+			}],
+			rewards: [{
+				id: "43A88E7127DFE290",
+				type: "item",
+				item: "mekanism:alloy_atomic",
+				count: 16
 			}]
 		}
 	]

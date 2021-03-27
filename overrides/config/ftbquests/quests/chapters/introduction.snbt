@@ -20,7 +20,7 @@
 				icon: "minecraft:player_head"
 			}],
 			rewards: [{
-				id: "6E2CBD92412824D5",
+				id: "5EB30DCCD8C96139",
 				type: "item",
 				item: {
 					id: "akashictome:tome",
@@ -32,35 +32,121 @@
 								id: "patchouli:guide_book",
 								Count: 1b,
 								tag: {
-									"patchouli:book": "storagenetwork:network_book"
+									"akashictome:displayName": {
+										text: "Network Guide Book"
+									},
+									"patchouli:book": "storagenetwork:network_book",
+									"akashictome:is_morphing": 1b,
+									display: {
+										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Network Guide Book"}]}'
+									}
+								}
+							},
+							industrialforegoing: {
+								id: "patchouli:guide_book",
+								Count: 1b,
+								tag: {
+									"akashictome:displayName": {
+										text: "Industrial Foregoing's Manual"
+									},
+									"patchouli:book": "industrialforegoing:industrial_foregoing",
+									"akashictome:is_morphing": 1b,
+									display: {
+										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Industrial Foregoing\'s Manual"}]}'
+									}
 								}
 							},
 							integratedtunnels: {
 								id: "integrateddynamics:on_the_dynamics_of_integration",
-								Count: 1b
+								Count: 1b,
+								tag: {
+									"akashictome:displayName": {
+										text: "On the Dynamics of Integration"
+									},
+									"akashictome:is_morphing": 1b,
+									display: {
+										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"On the Dynamics of Integration"}]}'
+									}
+								}
 							},
 							powah: {
 								id: "powah:book",
-								Count: 1b
+								Count: 1b,
+								tag: {
+									"akashictome:displayName": {
+										text: "Manual (Powah!)"
+									},
+									"akashictome:is_morphing": 1b,
+									display: {
+										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Manual (Powah!)"}]}'
+									}
+								}
 							},
 							resourcefulbees: {
 								id: "patchouli:guide_book",
 								Count: 1b,
 								tag: {
-									"patchouli:book": "resourcefulbees:fifty_shades_of_bees"
+									"akashictome:displayName": {
+										text: "Fifty Shades of Bees"
+									},
+									"patchouli:book": "resourcefulbees:fifty_shades_of_bees",
+									"akashictome:is_morphing": 1b,
+									display: {
+										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Fifty Shades of Bees"}]}'
+									}
+								}
+							},
+							theoneprobe: {
+								id: "theoneprobe:probenote",
+								Count: 1b,
+								tag: {
+									"akashictome:displayName": {
+										text: "The One Probe Read Me"
+									},
+									"akashictome:is_morphing": 1b,
+									display: {
+										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"The One Probe Read Me"}]}'
+									}
 								}
 							},
 							astralsorcery: {
 								id: "astralsorcery:tome",
-								Count: 1b
-							},
-							theoneprobe: {
-								id: "theoneprobe:probenote",
-								Count: 1b
+								Count: 1b,
+								tag: {
+									"akashictome:displayName": {
+										text: "Astral Tome"
+									},
+									"akashictome:is_morphing": 1b,
+									display: {
+										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Astral Tome"}]}'
+									}
+								}
 							},
 							ftbquests: {
 								id: "ftbquests:book",
-								Count: 1b
+								Count: 1b,
+								tag: {
+									"akashictome:displayName": {
+										text: "Quest Book"
+									},
+									"akashictome:is_morphing": 1b,
+									display: {
+										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Quest Book"}]}'
+									}
+								}
+							},
+							mana-and-artifice: {
+								id: "mana-and-artifice:guide_book",
+								Count: 1b,
+								tag: {
+									"akashictome:displayName": {
+										text: "Codex Arcana"
+									},
+									"akashictome:is_morphing": 1b,
+									display: {
+										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Codex Arcana"}]}'
+									}
+								}
 							},
 							woot: {
 								id: "patchouli:guide_book",
@@ -76,36 +162,89 @@
 									}
 								}
 							},
-							productivebees: {
-								id: "patchouli:guide_book",
-								Count: 1b,
-								tag: {
-									"patchouli:book": "productivebees:guide"
-								}
-							},
 							silentgear: {
 								id: "silentgear:blueprint_book",
 								Count: 1b,
 								tag: {
-									Inventory: {}
+									"akashictome:displayName": {
+										text: "Blueprint Book"
+									},
+									Inventory: {
+										Size: 54,
+										Items: []
+									},
+									"akashictome:is_morphing": 1b,
+									display: {
+										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Blueprint Book"}]}'
+									}
+								}
+							},
+							productivebees: {
+								id: "patchouli:guide_book",
+								Count: 1b,
+								tag: {
+									"akashictome:displayName": {
+										text: "Big Book of Bees"
+									},
+									"patchouli:book": "productivebees:guide",
+									"akashictome:is_morphing": 1b,
+									display: {
+										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Big Book of Bees"}]}'
+									}
 								}
 							},
 							botania: {
 								id: "botania:lexicon",
-								Count: 1b
+								Count: 1b,
+								tag: {
+									"akashictome:displayName": {
+										text: "Lexica Botania"
+									},
+									"akashictome:is_morphing": 1b,
+									display: {
+										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Lexica Botania"}]}'
+									}
+								}
+							},
+							ars_nouveau: {
+								id: "ars_nouveau:worn_notebook",
+								Count: 1b,
+								tag: {
+									"akashictome:displayName": {
+										text: "Worn Notebook"
+									},
+									"akashictome:is_morphing": 1b,
+									display: {
+										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Worn Notebook"}]}'
+									}
+								}
 							},
 							bloodmagic: {
 								id: "patchouli:guide_book",
 								Count: 1b,
 								tag: {
-									"patchouli:book": "bloodmagic:guide"
+									"akashictome:displayName": {
+										text: "Sanguine Scientiem"
+									},
+									"patchouli:book": "bloodmagic:guide",
+									"akashictome:is_morphing": 1b,
+									display: {
+										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Sanguine Scientiem"}]}'
+									}
 								}
 							},
 							thermal: {
 								id: "patchouli:guide_book",
 								Count: 1b,
 								tag: {
-									"patchouli:book": "thermal:guidebook"
+									"akashictome:displayName": {
+										text: "Thermalpedia"
+									},
+									"patchouli:book": "thermal:guidebook",
+									"akashictome:is_morphing": 1b,
+									display: {
+										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Thermalpedia"}]}'
+									}
 								}
 							}
 						}
@@ -143,6 +282,7 @@
 		},
 		{
 			title: "Better than Chests!",
+			icon: "appliedenergistics2:controller",
 			x: 2.5d,
 			y: -0.5d,
 			subtitle: "The foundation of your first AE2 network!",
@@ -151,7 +291,7 @@
 			tasks: [{
 				id: "0CC1F3DB2F8F8E2A",
 				type: "item",
-				item: "appliedenergistics2:controller"
+				item: "appliedenergistics2:charged_certus_quartz_crystal"
 			}],
 			rewards: [
 				{
@@ -203,6 +343,7 @@
 		},
 		{
 			title: "Infuse Those Metals!",
+			icon: "mekanism:metallurgic_infuser",
 			x: -1.0d,
 			y: 1.0d,
 			subtitle: "Start Mekanism!",
@@ -211,7 +352,7 @@
 			tasks: [{
 				id: "4F02FEBCE79899DA",
 				type: "item",
-				item: "mekanism:metallurgic_infuser"
+				item: "mekanism:ingot_osmium"
 			}],
 			rewards: [{
 				id: "0E5BD9C9FE1E098F",
@@ -222,6 +363,7 @@
 		},
 		{
 			title: "It's Over 9000 PSI!",
+			icon: "pneumaticcraft:air_compressor",
 			x: -1.5d,
 			y: -0.5d,
 			subtitle: "Start PneumaticCraft!",
@@ -230,7 +372,7 @@
 			tasks: [{
 				id: "257FBDF5CFE6B611",
 				type: "item",
-				item: "pneumaticcraft:air_compressor"
+				item: "pneumaticcraft:ingot_iron_compressed"
 			}],
 			rewards: [{
 				id: "318590F7B8B7163D",

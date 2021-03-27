@@ -23,7 +23,22 @@
 				id: "00D122EA2C55A3E8",
 				type: "checkmark",
 				title: "The Only Resource Gathering Method You'll Ever Need!"
-			}]
+			}],
+			rewards: [
+				{
+					id: "45C4EC34C25AD12B",
+					type: "command",
+					auto: "enabled",
+					command: "/say @p has begun the Environmental Tech questline!",
+					player_command: false
+				},
+				{
+					id: "3894F739D1C2E32C",
+					type: "item",
+					auto: "enabled",
+					item: "valkyrielib:info_tablet"
+				}
+			]
 		},
 		{
 			x: 2.0d,

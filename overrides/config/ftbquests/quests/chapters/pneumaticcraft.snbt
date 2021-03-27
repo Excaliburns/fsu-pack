@@ -17,6 +17,13 @@
 				id: "21DBDED7D3FE642F",
 				type: "checkmark",
 				title: "Under Pressure!"
+			}],
+			rewards: [{
+				id: "4BEDD5698DF98099",
+				type: "command",
+				auto: "enabled",
+				command: "/say @p has begun the PneumaticCraft questline!",
+				player_command: false
 			}]
 		},
 		{
