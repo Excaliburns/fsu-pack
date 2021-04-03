@@ -11,7 +11,7 @@
 		{
 			x: 0.5d,
 			y: -0.5d,
-			subtitle: "This is a modpack made for FSU, it's a Vanilla Lite flavored pack with vanilla-enhancing mods and then some tech for the more advanced modded players! This questbook has quests to help you learn new things about modded minecraft and how to play!",
+			subtitle: "This is a modpack made for FSU, it's a kitchen sink pack with the best mods 1.16 has to offer! This questbook has quests to help guide you through some of the well-known mods in the pack.",
 			id: "319DA93BFB9CECE8",
 			tasks: [{
 				id: "5401B2A669C13FAE",
@@ -22,6 +22,7 @@
 			rewards: [{
 				id: "5EB30DCCD8C96139",
 				type: "item",
+				auto: "enabled",
 				item: {
 					id: "akashictome:tome",
 					Count: 1b,
@@ -53,6 +54,17 @@
 									"akashictome:is_morphing": 1b,
 									display: {
 										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Industrial Foregoing\'s Manual"}]}'
+									}
+								}
+							},
+							tconstruct: {
+								id: "tconstruct:book",
+								Count: 1b,
+								tag: {
+									mantle: {
+										book: {
+											page: ""
+										}
 									}
 								}
 							},

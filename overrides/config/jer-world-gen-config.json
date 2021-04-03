@@ -1,0 +1,20 @@
+{
+  "block_whitelist": [
+    "#forge:ores",
+    "#forge:marble",
+    "#forge:stone"
+  ],
+  "dimensions": {
+    "minecraft:overworld": true,
+    "minecraft:the_nether": true,
+    "minecraft:the_end": true,
+    "appliedenergistics2:spatial_storage": false,
+    "jamd:mining": true,
+    "mahoutsukai:reality_marble": false,
+    "woot:tartarus": false,
+    "undergarden:undergarden": true,
+    "javd:void": false
+  },
+  "height": 128,
+  "scan_radius": 25
+}

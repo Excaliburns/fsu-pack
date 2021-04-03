@@ -45,7 +45,7 @@
 	#TODO
 	enableEffects = true
 	#Power unit shown in AE UIs
-	#Allowed Values: AE, RF
+	#Allowed Values: AE, EU, RF
 	PowerUnit = "AE"
 
 [terminals]
