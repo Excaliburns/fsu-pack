@@ -1,0 +1,779 @@
+{
+	id: "0AEE56943043259F",
+	group: "",
+	order_index: 4,
+	filename: "applied_energistics_2",
+	title: "Applied Energistics 2",
+	icon: "appliedenergistics2:controller",
+	default_quest_shape: "",
+	quests: [
+		{
+			x: -0.5d,
+			y: -0.5d,
+			subtitle: "The last storage system you'll ever need!",
+			dependencies: ["0CC1F3DB2F8F8E2A"],
+			id: "327F5635C1169A42",
+			tasks: [{
+				id: "0560AC429EA317DB",
+				type: "checkmark",
+				title: "Welcome to AE2!"
+			}],
+			rewards: [{
+				id: "688F26B82BD26AA1",
+				type: "command",
+				auto: "enabled",
+				command: "/say @p has begun the Applied Energistics 2 questline!",
+				player_command: false
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -0.5d,
+			dependencies: ["327F5635C1169A42"],
+			id: "5CDF351172BA27EE",
+			tasks: [{
+				id: "6030F0180D64CDCC",
+				type: "item",
+				item: "appliedenergistics2:charged_certus_quartz_crystal"
+			}],
+			rewards: [{
+				id: "6FDDB1065FC5B2A2",
+				type: "item",
+				item: "appliedenergistics2:charged_certus_quartz_crystal",
+				count: 8
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -1.5d,
+			dependencies: ["327F5635C1169A42"],
+			id: "77620892428394B8",
+			tasks: [{
+				id: "751AF10161342479",
+				type: "item",
+				item: "appliedenergistics2:certus_quartz_crystal"
+			}],
+			rewards: [{
+				id: "576F7A4AA9DAF869",
+				type: "item",
+				item: "appliedenergistics2:certus_quartz_crystal",
+				count: 8
+			}]
+		},
+		{
+			x: 1.0d,
+			y: 0.5d,
+			dependencies: ["327F5635C1169A42"],
+			id: "3E2180FED6749B3C",
+			tasks: [{
+				id: "257C2C6ACDE49034",
+				type: "item",
+				item: "minecraft:quartz"
+			}],
+			rewards: [{
+				id: "20A063750684118A",
+				type: "item",
+				item: "minecraft:quartz",
+				count: 8
+			}]
+		},
+		{
+			x: 1.0d,
+			y: 1.5d,
+			dependencies: ["327F5635C1169A42"],
+			id: "3E54537A4E10AF79",
+			tasks: [{
+				id: "013D3B89B80FE939",
+				type: "item",
+				item: "minecraft:redstone"
+			}],
+			rewards: [{
+				id: "6BC70FF5E440D772",
+				type: "item",
+				item: "minecraft:redstone",
+				count: 16
+			}]
+		},
+		{
+			x: 2.5d,
+			y: 0.5d,
+			dependencies: [
+				"5CDF351172BA27EE",
+				"3E2180FED6749B3C",
+				"3E54537A4E10AF79"
+			],
+			id: "38837F2E0F685D1E",
+			tasks: [{
+				id: "5A3977BA74B91398",
+				type: "item",
+				item: "appliedenergistics2:fluix_crystal"
+			}],
+			rewards: [{
+				id: "19B31E5D2A375E3C",
+				type: "random",
+				table_id: 1824051756338292682L
+			}]
+		},
+		{
+			x: 3.5d,
+			y: -0.5d,
+			dependencies: ["38837F2E0F685D1E"],
+			id: "255586E6EB0D4CE2",
+			tasks: [{
+				id: "4C668FC60368E06B",
+				type: "item",
+				item: "appliedenergistics2:charger"
+			}],
+			rewards: [{
+				id: "68A6D3954365A02D",
+				type: "item",
+				item: "appliedenergistics2:charger"
+			}]
+		},
+		{
+			x: 3.5d,
+			y: 0.5d,
+			dependencies: ["38837F2E0F685D1E"],
+			id: "6FEE2E4A44378808",
+			tasks: [{
+				id: "40FD64DBFD1C3564",
+				type: "item",
+				item: "appliedenergistics2:inscriber"
+			}],
+			rewards: [{
+				id: "6BA01B6484A8ECFB",
+				type: "random",
+				table_id: 8631013110691750206L
+			}]
+		},
+		{
+			x: 5.5d,
+			y: 3.0d,
+			dependencies: ["0B732274E33E437A"],
+			id: "64B3A9A78F6F4DEC",
+			tasks: [{
+				id: "19CEA39A661A8360",
+				type: "item",
+				item: "appliedenergistics2:purified_fluix_crystal"
+			}],
+			rewards: [{
+				id: "277E6AC58E875B6D",
+				type: "random",
+				table_id: 1824051756338292682L
+			}]
+		},
+		{
+			x: 5.5d,
+			y: -1.0d,
+			dependencies: ["6FEE2E4A44378808"],
+			id: "1FAA1086E449C6BA",
+			tasks: [{
+				id: "00ACE73F01610C47",
+				type: "item",
+				item: "appliedenergistics2:calculation_processor_press"
+			}],
+			rewards: [{
+				id: "4AF3896EBE88B5EB",
+				type: "random",
+				table_id: 8631013110691750206L
+			}]
+		},
+		{
+			x: 5.5d,
+			y: 0.0d,
+			dependencies: ["6FEE2E4A44378808"],
+			id: "6EE762FEBCF31D5B",
+			tasks: [{
+				id: "5926291732129FFC",
+				type: "item",
+				item: "appliedenergistics2:engineering_processor_press"
+			}],
+			rewards: [{
+				id: "21D3AEC6D892F34A",
+				type: "random",
+				table_id: 8631013110691750206L
+			}]
+		},
+		{
+			x: 5.5d,
+			y: 1.0d,
+			dependencies: ["6FEE2E4A44378808"],
+			id: "627E1C761B3672BE",
+			tasks: [{
+				id: "2760D16B8D2D437B",
+				type: "item",
+				item: "appliedenergistics2:logic_processor_press"
+			}],
+			rewards: [{
+				id: "1E0E2AC094E7F4D1",
+				type: "random",
+				table_id: 8631013110691750206L
+			}]
+		},
+		{
+			x: 5.5d,
+			y: 2.0d,
+			dependencies: ["6FEE2E4A44378808"],
+			id: "19DC0B2E48DB93AD",
+			tasks: [{
+				id: "648B3898C3D9F810",
+				type: "item",
+				item: "appliedenergistics2:silicon_press"
+			}],
+			rewards: [{
+				id: "6E9AE8F1F3C41C4A",
+				type: "random",
+				table_id: 8631013110691750206L
+			}]
+		},
+		{
+			x: 7.0d,
+			y: 1.0d,
+			dependencies: [
+				"627E1C761B3672BE",
+				"19DC0B2E48DB93AD"
+			],
+			id: "6419D95CAD58659F",
+			tasks: [{
+				id: "52FC901DD3A784A8",
+				type: "item",
+				item: "appliedenergistics2:logic_processor"
+			}],
+			rewards: [{
+				id: "2734A510A54BAB66",
+				type: "item",
+				item: "appliedenergistics2:logic_processor"
+			}]
+		},
+		{
+			x: 7.0d,
+			y: -1.0d,
+			dependencies: [
+				"19DC0B2E48DB93AD",
+				"1FAA1086E449C6BA",
+				"2EBE024DB64739C9"
+			],
+			id: "318FCB464D76A7B7",
+			tasks: [{
+				id: "347CE92FAB4C3A4B",
+				type: "item",
+				item: "appliedenergistics2:calculation_processor"
+			}],
+			rewards: [{
+				id: "295DE809E099EE68",
+				type: "item",
+				item: "appliedenergistics2:calculation_processor"
+			}]
+		},
+		{
+			x: 7.0d,
+			y: 0.0d,
+			dependencies: [
+				"19DC0B2E48DB93AD",
+				"6EE762FEBCF31D5B"
+			],
+			id: "5846D752317EB32D",
+			tasks: [{
+				id: "326E11CF25C09BE3",
+				type: "item",
+				item: "appliedenergistics2:engineering_processor"
+			}],
+			rewards: [{
+				id: "57B36BF76EAA42FF",
+				type: "item",
+				item: "appliedenergistics2:engineering_processor"
+			}]
+		},
+		{
+			x: 3.5d,
+			y: -1.5d,
+			dependencies: ["38837F2E0F685D1E"],
+			id: "74E01067945621E4",
+			tasks: [{
+				id: "41EAA1EA4BC14B4A",
+				type: "item",
+				item: "appliedenergistics2:energy_acceptor"
+			}],
+			rewards: [{
+				id: "17891839B131AA67",
+				type: "item",
+				item: "appliedenergistics2:fluix_glass_cable",
+				count: 16
+			}]
+		},
+		{
+			x: 3.5d,
+			y: -2.5d,
+			subtitle: "Toss 4 of these bad boys around a pool of water and watch your seeds grow!",
+			dependencies: ["38837F2E0F685D1E"],
+			id: "63B68A3EC887D205",
+			tasks: [{
+				id: "276AF4F41D27E032",
+				type: "item",
+				item: "appliedenergistics2:quartz_growth_accelerator"
+			}],
+			rewards: [{
+				id: "271D82CD10D06534",
+				type: "random",
+				table_id: 1824051756338292682L
+			}]
+		},
+		{
+			x: 5.5d,
+			y: -2.5d,
+			dependencies: ["5023F9E88DDAFBE0"],
+			id: "2EBE024DB64739C9",
+			tasks: [{
+				id: "316D810B03A08C38",
+				type: "item",
+				item: "appliedenergistics2:purified_certus_quartz_crystal"
+			}],
+			rewards: [{
+				id: "46594CCC27D12D6B",
+				type: "random",
+				table_id: 1824051756338292682L
+			}]
+		},
+		{
+			x: 4.5d,
+			y: -2.5d,
+			dependencies: ["63B68A3EC887D205"],
+			id: "5023F9E88DDAFBE0",
+			tasks: [{
+				id: "31705F2C1729FCE5",
+				type: "item",
+				item: "appliedenergistics2:certus_crystal_seed"
+			}],
+			rewards: [{
+				id: "2295A8D711A71EA8",
+				type: "random",
+				table_id: 1824051756338292682L
+			}]
+		},
+		{
+			x: 3.5d,
+			y: 1.5d,
+			dependencies: ["38837F2E0F685D1E"],
+			id: "0B732274E33E437A",
+			tasks: [{
+				id: "269ED5CCD47F7CB2",
+				type: "item",
+				item: "appliedenergistics2:fluix_crystal_seed"
+			}],
+			rewards: [{
+				id: "66482CD4EB69A021",
+				type: "random",
+				table_id: 1824051756338292682L
+			}]
+		},
+		{
+			x: 9.0d,
+			y: 0.0d,
+			dependencies: [
+				"5846D752317EB32D",
+				"64B3A9A78F6F4DEC"
+			],
+			id: "7C4A0A9FD385C589",
+			tasks: [{
+				id: "20C178042BDE98F7",
+				type: "item",
+				item: "appliedenergistics2:controller"
+			}],
+			rewards: [{
+				id: "53BA8173534CCE62",
+				type: "item",
+				item: "appliedenergistics2:controller"
+			}]
+		},
+		{
+			x: 9.0d,
+			y: -1.0d,
+			dependencies: ["5846D752317EB32D"],
+			id: "3530F0A76DB64762",
+			tasks: [{
+				id: "565C52D93EC05E06",
+				type: "item",
+				item: "appliedenergistics2:drive"
+			}],
+			rewards: [{
+				id: "7E5DDD3C14FC9ABD",
+				type: "item",
+				item: "appliedenergistics2:1k_cell_component"
+			}]
+		},
+		{
+			x: 10.5d,
+			y: -1.0d,
+			dependencies: ["3530F0A76DB64762"],
+			id: "52311E248E1AD9EA",
+			tasks: [{
+				id: "1A6871C4307F4E84",
+				type: "item",
+				item: {
+					id: "appliedenergistics2:1k_storage_cell",
+					Count: 1b,
+					tag: {}
+				}
+			}]
+		},
+		{
+			x: 11.5d,
+			y: -1.0d,
+			dependencies: ["3530F0A76DB64762"],
+			id: "3EEF4C4A04A178D9",
+			tasks: [{
+				id: "548004C37C8C8572",
+				type: "item",
+				item: {
+					id: "appliedenergistics2:4k_storage_cell",
+					Count: 1b,
+					tag: {}
+				}
+			}]
+		},
+		{
+			x: 12.5d,
+			y: -1.0d,
+			dependencies: ["3530F0A76DB64762"],
+			id: "10A1D225EBDF3425",
+			tasks: [{
+				id: "193E0AC797A5AF58",
+				type: "item",
+				item: {
+					id: "appliedenergistics2:16k_storage_cell",
+					Count: 1b,
+					tag: {}
+				}
+			}]
+		},
+		{
+			x: 13.5d,
+			y: -1.0d,
+			dependencies: ["3530F0A76DB64762"],
+			id: "5A63D2815A7A25FC",
+			tasks: [{
+				id: "527A0742E6B107B0",
+				type: "item",
+				item: {
+					id: "appliedenergistics2:64k_storage_cell",
+					Count: 1b,
+					tag: {}
+				}
+			}]
+		},
+		{
+			x: 14.5d,
+			y: -1.0d,
+			dependencies: ["5A63D2815A7A25FC"],
+			id: "4122E405061101BE",
+			tasks: [{
+				id: "0B125CB06379AF1E",
+				type: "item",
+				item: {
+					id: "appliedenergistics2:64k_storage_cell",
+					Count: 1b,
+					tag: {}
+				},
+				count: 10L
+			}]
+		},
+		{
+			x: 15.5d,
+			y: -1.0d,
+			dependencies: ["4122E405061101BE"],
+			id: "53A2783B540E76A7",
+			tasks: [{
+				id: "1A95B55F4B0DF0A4",
+				type: "checkmark",
+				title: "Storage Maestro!"
+			}],
+			rewards: [{
+				id: "1AB560170E32C971",
+				type: "xp_levels",
+				xp_levels: 5
+			}]
+		},
+		{
+			x: 10.0d,
+			y: 1.0d,
+			dependencies: ["7C4A0A9FD385C589"],
+			id: "316DB6E7C362CA16",
+			tasks: [{
+				id: "640A77F05058C799",
+				type: "item",
+				item: "appliedenergistics2:crafting_terminal"
+			}],
+			rewards: [{
+				id: "6516E1AF34B573D2",
+				type: "random",
+				table_id: 8631013110691750206L
+			}]
+		},
+		{
+			x: 10.0d,
+			y: 0.0d,
+			dependencies: ["7C4A0A9FD385C589"],
+			id: "584CACDF1845D500",
+			tasks: [{
+				id: "5C675732A3297022",
+				type: "item",
+				item: "appliedenergistics2:terminal"
+			}],
+			rewards: [{
+				id: "5E0F97E9E1646DBF",
+				type: "random",
+				table_id: 8631013110691750206L
+			}]
+		},
+		{
+			x: 10.0d,
+			y: 2.0d,
+			dependencies: ["7C4A0A9FD385C589"],
+			id: "4F343BB3E3E68E87",
+			tasks: [{
+				id: "3F9DC7EEFA0B8AC1",
+				type: "item",
+				item: "appliedenergistics2:fluid_terminal"
+			}],
+			rewards: [{
+				id: "0B0165EF6977CD4E",
+				type: "random",
+				table_id: 8631013110691750206L
+			}]
+		},
+		{
+			x: 10.0d,
+			y: 3.0d,
+			dependencies: ["7C4A0A9FD385C589"],
+			id: "56F30194D9CD2744",
+			tasks: [{
+				id: "184FFE485FA587F0",
+				type: "item",
+				item: "appliedenergistics2:1k_crafting_storage"
+			}],
+			rewards: [{
+				id: "1FE6829026E95DBA",
+				type: "item",
+				item: "appliedenergistics2:crafting_accelerator"
+			}]
+		},
+		{
+			x: 10.0d,
+			y: 4.0d,
+			dependencies: ["7C4A0A9FD385C589"],
+			id: "5F6B0CA1E65A2F00",
+			tasks: [{
+				id: "62CC27AA920F9F21",
+				type: "item",
+				item: "appliedenergistics2:4k_crafting_storage"
+			}],
+			rewards: [{
+				id: "4AF0C65B1EFBDB8C",
+				type: "item",
+				item: "appliedenergistics2:crafting_accelerator"
+			}]
+		},
+		{
+			x: 10.0d,
+			y: 5.0d,
+			dependencies: ["7C4A0A9FD385C589"],
+			id: "0360956EBD497793",
+			tasks: [{
+				id: "2AD97CC22728F1DC",
+				type: "item",
+				item: "appliedenergistics2:16k_crafting_storage"
+			}],
+			rewards: [{
+				id: "11C6D1D662C083F4",
+				type: "item",
+				item: "appliedenergistics2:crafting_accelerator"
+			}]
+		},
+		{
+			x: 10.0d,
+			y: 6.0d,
+			dependencies: ["7C4A0A9FD385C589"],
+			id: "7904D9E2B77647A3",
+			tasks: [{
+				id: "50133B8C4302CD13",
+				type: "item",
+				item: "appliedenergistics2:64k_crafting_storage"
+			}],
+			rewards: [{
+				id: "3FEFFCBDCCD90ED4",
+				type: "item",
+				item: "appliedenergistics2:crafting_accelerator"
+			}]
+		},
+		{
+			x: 9.0d,
+			y: 3.0d,
+			dependencies: ["7C4A0A9FD385C589"],
+			id: "4DFFED34C0021585",
+			tasks: [{
+				id: "16427F01911562C8",
+				type: "item",
+				item: "appliedenergistics2:pattern_terminal"
+			}],
+			rewards: [{
+				id: "4A48213868A3117F",
+				type: "random",
+				table_id: 8631013110691750206L
+			}]
+		},
+		{
+			x: 8.0d,
+			y: 2.0d,
+			dependencies: ["7C4A0A9FD385C589"],
+			id: "4BB06925E1880D41",
+			tasks: [{
+				id: "051F23C8A78FA455",
+				type: "item",
+				item: "appliedenergistics2:interface_terminal"
+			}],
+			rewards: [{
+				id: "21EEA433B9E4B0D4",
+				type: "random",
+				table_id: 8631013110691750206L
+			}]
+		},
+		{
+			x: 11.5d,
+			y: 0.0d,
+			dependencies: ["7C4A0A9FD385C589"],
+			id: "7F0660DCA5357BFF",
+			tasks: [{
+				id: "5102999BE5D019B0",
+				type: "item",
+				item: "appliedenergistics2:interface"
+			}],
+			rewards: [{
+				id: "4B7B1BE76EDB73A5",
+				type: "random",
+				table_id: 8631013110691750206L
+			}]
+		},
+		{
+			x: 11.5d,
+			y: 1.0d,
+			dependencies: ["7C4A0A9FD385C589"],
+			id: "75D8EF72B9FD1303",
+			tasks: [{
+				id: "06F583B77F03FCF9",
+				type: "item",
+				item: "appliedenergistics2:molecular_assembler"
+			}],
+			rewards: [{
+				id: "0CF6460136A167D0",
+				type: "random",
+				table_id: 8631013110691750206L
+			}]
+		},
+		{
+			x: 11.5d,
+			y: 2.0d,
+			dependencies: ["7C4A0A9FD385C589"],
+			id: "73CFD7E3A5DF8C55",
+			tasks: [{
+				id: "3676A0CF277D5E48",
+				type: "item",
+				item: "appliedenergistics2:blank_pattern"
+			}],
+			rewards: [{
+				id: "0F6EAC276EC22E3B",
+				type: "item",
+				item: "appliedenergistics2:blank_pattern",
+				count: 16
+			}]
+		},
+		{
+			x: 3.5d,
+			y: 2.5d,
+			dependencies: ["38837F2E0F685D1E"],
+			id: "2575F6FEA535B595",
+			tasks: [{
+				id: "6B4995735AB61649",
+				type: "item",
+				item: "appliedenergistics2:fluix_glass_cable"
+			}],
+			rewards: [{
+				id: "5963796E68371A64",
+				type: "random",
+				table_id: 8631013110691750206L
+			}]
+		},
+		{
+			x: 3.5d,
+			y: 3.5d,
+			dependencies: ["2575F6FEA535B595"],
+			id: "1C6D4ACD2A683B0E",
+			tasks: [{
+				id: "49F1E43F2EF9BC79",
+				type: "item",
+				item: "appliedenergistics2:fluix_covered_cable"
+			}],
+			rewards: [{
+				id: "2327D52504339F54",
+				type: "random",
+				table_id: 8631013110691750206L
+			}]
+		},
+		{
+			x: 3.5d,
+			y: 4.5d,
+			dependencies: ["1C6D4ACD2A683B0E"],
+			id: "775DAB4B38E28051",
+			tasks: [{
+				id: "4AB13DDF462DA00A",
+				type: "item",
+				item: "appliedenergistics2:fluix_smart_cable"
+			}],
+			rewards: [{
+				id: "5913F0F6E0F392F3",
+				type: "random",
+				table_id: 8631013110691750206L
+			}]
+		},
+		{
+			x: 3.5d,
+			y: 5.5d,
+			dependencies: ["775DAB4B38E28051"],
+			id: "26D9AA03BBE041C2",
+			tasks: [{
+				id: "09FD547804AEE804",
+				type: "item",
+				item: "appliedenergistics2:fluix_smart_dense_cable"
+			}],
+			rewards: [{
+				id: "531BD819BAC93CC1",
+				type: "random",
+				table_id: 8631013110691750206L
+			}]
+		},
+		{
+			x: 15.5d,
+			y: 6.0d,
+			dependencies: [
+				"53A2783B540E76A7",
+				"7904D9E2B77647A3",
+				"7F0660DCA5357BFF",
+				"75D8EF72B9FD1303",
+				"73CFD7E3A5DF8C55",
+				"26D9AA03BBE041C2"
+			],
+			id: "5C1436B42145847A",
+			tasks: [{
+				id: "7AE7586FEAE0B876",
+				type: "checkmark",
+				title: "Clout!"
+			}],
+			rewards: [{
+				id: "497B3F90436806A3",
+				type: "command",
+				auto: "enabled",
+				command: "/say @p has completed the Applied Energistics 2 questline!",
+				player_command: false
+			}]
+		}
+	]
+}

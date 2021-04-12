@@ -1,0 +1,402 @@
+{
+	id: "64415817A1539554",
+	group: "",
+	order_index: 5,
+	filename: "refined_storage",
+	title: "Refined Storage",
+	icon: "refinedstorage:controller",
+	default_quest_shape: "",
+	quests: [
+		{
+			x: -3.5d,
+			y: 0.0d,
+			dependencies: ["62B8C67EFA92C863"],
+			id: "1672FFDBD444F267",
+			tasks: [{
+				id: "7FBC26D0EDCED063",
+				type: "checkmark",
+				title: "Start Refined Storage!"
+			}],
+			rewards: [{
+				id: "69BD0F09A65B65C5",
+				type: "command",
+				auto: "enabled",
+				command: "/say @p has begun the Refined Storage questline!",
+				player_command: false
+			}]
+		},
+		{
+			x: -0.5d,
+			y: 0.0d,
+			dependencies: ["3771156943031DB6"],
+			id: "5A62A15765AD5D76",
+			tasks: [{
+				id: "1207E1F381574FED",
+				type: "item",
+				item: "refinedstorage:disk_drive"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: -2.0d,
+			dependencies: ["3771156943031DB6"],
+			id: "1B60FF8C8B048EC3",
+			tasks: [{
+				id: "23F0A632FCDC04F7",
+				type: "item",
+				item: "refinedstorage:cable"
+			}],
+			rewards: [{
+				id: "037DE9A9645BD545",
+				type: "item",
+				item: "refinedstorage:cable",
+				count: 32
+			}]
+		},
+		{
+			x: -2.0d,
+			y: 0.0d,
+			dependencies: ["1672FFDBD444F267"],
+			id: "3771156943031DB6",
+			tasks: [{
+				id: "2F3B5B738B1B84C5",
+				type: "item",
+				item: "refinedstorage:machine_casing"
+			}],
+			rewards: [{
+				id: "41CC700CCB55DCE0",
+				type: "item",
+				item: "refinedstorage:quartz_enriched_iron",
+				count: 16
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -1.5d,
+			dependencies: ["314F619B9F55A318"],
+			id: "62002B5776F0B139",
+			tasks: [{
+				id: "6768866206497180",
+				type: "item",
+				item: "refinedstorage:grid"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: -3.0d,
+			dependencies: ["62002B5776F0B139"],
+			id: "516EF9A1F5800EC4",
+			tasks: [{
+				id: "5FF681B7AD459A45",
+				type: "item",
+				item: "refinedstorage:crafting_grid"
+			}],
+			rewards: [{
+				id: "59191E24702943EC",
+				type: "random",
+				table_id: 6949766545742092870L
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -3.0d,
+			dependencies: ["62002B5776F0B139"],
+			id: "39C1DDDFF528A3AE",
+			tasks: [{
+				id: "61B255B409E8BA0A",
+				type: "item",
+				item: "refinedstorage:pattern_grid"
+			}],
+			rewards: [{
+				id: "27D0B16A9B48BE08",
+				type: "item",
+				item: "refinedstorage:quartz_enriched_iron",
+				count: 16
+			}]
+		},
+		{
+			x: 1.0d,
+			y: 0.0d,
+			dependencies: ["5A62A15765AD5D76"],
+			id: "314F619B9F55A318",
+			tasks: [{
+				id: "62F7FD349E840B13",
+				type: "item",
+				item: "refinedstorage:1k_storage_disk"
+			}],
+			rewards: [{
+				id: "65FC0CD2CD774CCD",
+				type: "random",
+				table_id: 6949766545742092870L
+			}]
+		},
+		{
+			x: -5.0d,
+			y: 0.0d,
+			dependencies: ["1672FFDBD444F267"],
+			id: "25DB1FD1D0B90935",
+			tasks: [{
+				id: "7A4AABD1582C1656",
+				type: "item",
+				item: "refinedstorage:silicon"
+			}],
+			rewards: [{
+				id: "31F7AF7E57CAE3DF",
+				type: "item",
+				item: "minecraft:quartz",
+				count: 32
+			}]
+		},
+		{
+			x: -6.5d,
+			y: 0.0d,
+			dependencies: ["25DB1FD1D0B90935"],
+			id: "58CB9CBC8D7B66A8",
+			tasks: [{
+				id: "187021AEBB26685A",
+				type: "item",
+				item: "refinedstorage:raw_basic_processor"
+			}],
+			rewards: [{
+				id: "38C556D9DF02376F",
+				type: "random",
+				table_id: 5100353050464531744L
+			}]
+		},
+		{
+			x: -6.5d,
+			y: -1.0d,
+			dependencies: ["25DB1FD1D0B90935"],
+			id: "2D2128148C299DA0",
+			tasks: [{
+				id: "6182D75B4590F18C",
+				type: "item",
+				item: "refinedstorage:raw_improved_processor"
+			}],
+			rewards: [{
+				id: "38693E91A6DB1A78",
+				type: "random",
+				table_id: 5100353050464531744L
+			}]
+		},
+		{
+			x: -6.5d,
+			y: 1.0d,
+			dependencies: ["25DB1FD1D0B90935"],
+			id: "6380387CF020EF57",
+			tasks: [{
+				id: "72E156D2B74AB36B",
+				type: "item",
+				item: "refinedstorage:raw_advanced_processor"
+			}],
+			rewards: [{
+				id: "261B0F4F64231602",
+				type: "random",
+				table_id: 5100353050464531744L
+			}]
+		},
+		{
+			x: -7.5d,
+			y: -1.0d,
+			dependencies: ["2D2128148C299DA0"],
+			id: "22DAE9F8AE6D27AD",
+			tasks: [{
+				id: "4AB315C08DFAB651",
+				type: "item",
+				item: "refinedstorage:improved_processor"
+			}],
+			rewards: [{
+				id: "635C45EC03DACA5C",
+				type: "random",
+				table_id: 5100353050464531744L
+			}]
+		},
+		{
+			x: -7.5d,
+			y: 1.0d,
+			dependencies: ["6380387CF020EF57"],
+			id: "318F35D8AD8AFED6",
+			tasks: [{
+				id: "5954C56EDE288F8F",
+				type: "item",
+				item: "refinedstorage:advanced_processor"
+			}],
+			rewards: [{
+				id: "058925FE4E892147",
+				type: "random",
+				table_id: 5100353050464531744L
+			}]
+		},
+		{
+			x: -7.5d,
+			y: 0.0d,
+			dependencies: ["58CB9CBC8D7B66A8"],
+			id: "517724DCDDF3D964",
+			tasks: [{
+				id: "17034AA747561921",
+				type: "item",
+				item: "refinedstorage:basic_processor"
+			}],
+			rewards: [{
+				id: "0158449B0AC6AFBD",
+				type: "random",
+				table_id: 5100353050464531744L
+			}]
+		},
+		{
+			x: 1.0d,
+			y: 1.0d,
+			dependencies: ["314F619B9F55A318"],
+			id: "405E5BA323E39A40",
+			tasks: [{
+				id: "3254C5B5AE6DC500",
+				type: "item",
+				item: "refinedstorage:4k_storage_disk"
+			}],
+			rewards: [{
+				id: "543A39F1759F9908",
+				type: "random",
+				table_id: 6949766545742092870L
+			}]
+		},
+		{
+			x: 1.0d,
+			y: 2.0d,
+			dependencies: ["405E5BA323E39A40"],
+			id: "4A837E297E47E79A",
+			tasks: [{
+				id: "242BA9D387036829",
+				type: "item",
+				item: "refinedstorage:16k_storage_disk"
+			}],
+			rewards: [{
+				id: "1AEC23C4C7BA95C4",
+				type: "random",
+				table_id: 6949766545742092870L
+			}]
+		},
+		{
+			x: 1.0d,
+			y: 3.0d,
+			dependencies: ["4A837E297E47E79A"],
+			id: "2D908FE70AB74B9D",
+			tasks: [{
+				id: "4407F60CE4AF0A25",
+				type: "item",
+				item: "refinedstorage:64k_storage_disk"
+			}],
+			rewards: [{
+				id: "2D0258D807067578",
+				type: "random",
+				table_id: 6949766545742092870L
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -5.0d,
+			dependencies: ["79419EE4366B770C"],
+			id: "1372D0AC00804990",
+			tasks: [{
+				id: "0A2FDB84D696C893",
+				type: "item",
+				item: "refinedstorage:crafter"
+			}],
+			rewards: [{
+				id: "0EECBC1950A18905",
+				type: "random",
+				table_id: 6949766545742092870L
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -4.0d,
+			dependencies: ["39C1DDDFF528A3AE"],
+			id: "79419EE4366B770C",
+			tasks: [{
+				id: "13D697E9226113F7",
+				type: "item",
+				item: "refinedstorage:pattern"
+			}],
+			rewards: [{
+				id: "315E29589F046C75",
+				type: "item",
+				item: "refinedstorage:pattern",
+				count: 16
+			}]
+		},
+		{
+			x: 3.0d,
+			y: -1.5d,
+			dependencies: ["13983A9BA689A67F"],
+			id: "19E8B14C9590FC7A",
+			tasks: [{
+				id: "638DBD43DAF8A879",
+				type: "item",
+				item: "refinedstorage:wireless_grid"
+			}],
+			rewards: [{
+				id: "34E64980DC0239CF",
+				type: "item",
+				item: "refinedstorage:range_upgrade"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -1.5d,
+			dependencies: ["62002B5776F0B139"],
+			id: "13983A9BA689A67F",
+			tasks: [{
+				id: "12D4D0FBF24D9AD9",
+				type: "item",
+				item: "refinedstorage:wireless_transmitter"
+			}],
+			rewards: [{
+				id: "502DF373F0558190",
+				type: "item",
+				item: "refinedstorage:range_upgrade"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: -1.5d,
+			dependencies: ["19E8B14C9590FC7A"],
+			id: "47F4ED572E2906FA",
+			tasks: [{
+				id: "24F858B404C249C1",
+				type: "item",
+				item: "refinedstorage:range_upgrade"
+			}],
+			rewards: [{
+				id: "5F8478E320457D08",
+				type: "xp_levels",
+				xp_levels: 5
+			}]
+		},
+		{
+			x: -2.0d,
+			y: 3.0d,
+			dependencies: [
+				"1372D0AC00804990",
+				"516EF9A1F5800EC4",
+				"47F4ED572E2906FA",
+				"2D908FE70AB74B9D",
+				"318F35D8AD8AFED6",
+				"517724DCDDF3D964",
+				"22DAE9F8AE6D27AD"
+			],
+			id: "2808D37EABDDDA7F",
+			tasks: [{
+				id: "354E2B88D7D8915C",
+				type: "checkmark",
+				title: "Clout!"
+			}],
+			rewards: [{
+				id: "2C4EF558932709D5",
+				type: "command",
+				auto: "enabled",
+				command: "/say @p has completed the Refined Storage questline!",
+				player_command: false
+			}]
+		}
+	]
+}

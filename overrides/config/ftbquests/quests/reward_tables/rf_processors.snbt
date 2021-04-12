@@ -1,0 +1,41 @@
+{
+	id: "46C818139A04B520",
+	order_index: 5,
+	title: "RF Processors",
+	icon: "refinedstorage:processor_binding",
+	loot_size: 1,
+	rewards: [
+		{
+			item: "refinedstorage:raw_basic_processor",
+			count: 4,
+			weight: 16
+		},
+		{
+			item: "refinedstorage:raw_improved_processor",
+			count: 2,
+			weight: 8
+		},
+		{
+			item: "refinedstorage:raw_advanced_processor",
+			weight: 4
+		},
+		{
+			item: "minecraft:slime_ball",
+			count: 2
+		},
+		{
+			item: "refinedstorage:advanced_processor",
+			weight: 4
+		},
+		{
+			item: "refinedstorage:improved_processor",
+			count: 2,
+			weight: 8
+		},
+		{
+			item: "refinedstorage:basic_processor",
+			count: 4,
+			weight: 16
+		}
+	]
+}

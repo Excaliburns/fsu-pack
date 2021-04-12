@@ -1,0 +1,538 @@
+{
+	id: "3E28B5E456D0FA56",
+	group: "",
+	order_index: 7,
+	filename: "pneumaticcraft",
+	title: "PneumaticCraft",
+	icon: "pneumaticcraft:air_compressor",
+	default_quest_shape: "",
+	quests: [
+		{
+			x: 0.0d,
+			y: 0.0d,
+			subtitle: "Welcome to PneumaticCraft!",
+			dependencies: ["257FBDF5CFE6B611"],
+			id: "60C1C0D08B7F0F48",
+			tasks: [{
+				id: "21DBDED7D3FE642F",
+				type: "checkmark",
+				title: "Under Pressure!"
+			}],
+			rewards: [{
+				id: "4BEDD5698DF98099",
+				type: "command",
+				auto: "enabled",
+				command: "/say @p has begun the PneumaticCraft questline!",
+				player_command: false
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 0.0d,
+			dependencies: ["60C1C0D08B7F0F48"],
+			id: "184ACD13F293DC10",
+			tasks: [{
+				id: "4831999ECDB07455",
+				type: "item",
+				item: "pneumaticcraft:air_compressor"
+			}],
+			rewards: [{
+				id: "41C888024F89D4A8",
+				type: "item",
+				item: "minecraft:coal",
+				count: 64
+			}]
+		},
+		{
+			title: "High Pressure: Keep Out!",
+			x: 3.0d,
+			y: 0.0d,
+			subtitle: "Make a pressure chamber!",
+			dependencies: ["184ACD13F293DC10"],
+			id: "657D779C1EE202EC",
+			tasks: [
+				{
+					id: "0444A07D5A61EA9C",
+					type: "item",
+					item: "pneumaticcraft:pressure_chamber_wall",
+					count: 62L
+				},
+				{
+					id: "1AB5C2029F6A5CA9",
+					type: "item",
+					item: "pneumaticcraft:pressure_chamber_glass",
+					count: 33L
+				},
+				{
+					id: "0FF6160497835D07",
+					type: "item",
+					item: "pneumaticcraft:pressure_chamber_valve"
+				},
+				{
+					id: "6C7F65FED9B701C5",
+					type: "item",
+					item: "pneumaticcraft:pressure_chamber_interface",
+					count: 2L
+				}
+			],
+			rewards: [{
+				id: "6279B8C35D41C5EA",
+				type: "item",
+				item: "pneumaticcraft:pressure_tube",
+				count: 16
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 1.5d,
+			dependencies: ["184ACD13F293DC10"],
+			id: "71E67E7474B33CF2",
+			tasks: [{
+				id: "0EADC6EFD2F75E7B",
+				type: "item",
+				item: "pneumaticcraft:vortex_tube"
+			}],
+			rewards: [{
+				id: "2687FFC3D217BEAA",
+				type: "item",
+				item: "pneumaticcraft:vortex_tube"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 3.0d,
+			dependencies: ["71E67E7474B33CF2"],
+			id: "1171CEBA8FA1B279",
+			tasks: [
+				{
+					id: "7C0EA2867ED8C534",
+					type: "item",
+					item: "pneumaticcraft:refinery"
+				},
+				{
+					id: "161FFB7C4B8CA15D",
+					type: "item",
+					item: "pneumaticcraft:refinery_output",
+					count: 4L
+				}
+			],
+			rewards: [{
+				id: "4596249A0D322FA1",
+				type: "item",
+				item: "pneumaticcraft:vortex_tube",
+				count: 2
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 4.5d,
+			dependencies: ["1171CEBA8FA1B279"],
+			id: "53682ECAFDECE425",
+			tasks: [{
+				id: "393722165679F572",
+				type: "item",
+				item: "pneumaticcraft:thermopneumatic_processing_plant"
+			}],
+			rewards: [{
+				id: "347AC283F19DA649",
+				type: "item",
+				item: "pneumaticcraft:security_upgrade"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 6.0d,
+			dependencies: ["53682ECAFDECE425"],
+			id: "5C9B3F4C45C5D23A",
+			tasks: [{
+				id: "43BE70783004A115",
+				type: "item",
+				item: "pneumaticcraft:lubricant_bucket"
+			}],
+			rewards: [{
+				id: "23DFE995E9358475",
+				type: "item",
+				item: "pneumaticcraft:lubricant_bucket"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 6.0d,
+			dependencies: ["53682ECAFDECE425"],
+			id: "5587248AC7759D78",
+			tasks: [{
+				id: "4D3BAC304771773F",
+				type: "item",
+				item: "pneumaticcraft:plastic_bucket"
+			}],
+			rewards: [{
+				id: "365E4AE99BCD29B4",
+				type: "item",
+				item: "pneumaticcraft:plastic_bucket"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 7.5d,
+			dependencies: ["5C9B3F4C45C5D23A"],
+			id: "34A64809D94062A4",
+			tasks: [{
+				id: "147DA4085E75B34F",
+				type: "item",
+				item: "pneumaticcraft:speed_upgrade"
+			}],
+			rewards: [{
+				id: "6775D10F861B02F0",
+				type: "item",
+				item: "pneumaticcraft:speed_upgrade",
+				count: 7
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 7.5d,
+			subtitle: "Place a bucket of molten plastic in the world to turn it into a plastic sheet!",
+			dependencies: ["5587248AC7759D78"],
+			id: "4AF479936774B93B",
+			tasks: [{
+				id: "3166F3EEEB7989CC",
+				type: "item",
+				item: "pneumaticcraft:plastic"
+			}],
+			rewards: [{
+				id: "14F70213D013D322",
+				type: "item",
+				item: "pneumaticcraft:plastic",
+				count: 4
+			}]
+		},
+		{
+			x: 2.5d,
+			y: 7.5d,
+			dependencies: [
+				"4AF479936774B93B",
+				"657D779C1EE202EC"
+			],
+			id: "7C93B5081895B4CA",
+			tasks: [{
+				id: "393A1CF255BF9DBA",
+				type: "item",
+				item: "pneumaticcraft:transistor"
+			}],
+			rewards: [{
+				id: "4CE75AFCAC88E546",
+				type: "item",
+				item: "pneumaticcraft:transistor"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: -1.5d,
+			dependencies: ["184ACD13F293DC10"],
+			id: "47312E480FC5154E",
+			tasks: [{
+				id: "11FA4FEBE99C0DFB",
+				type: "item",
+				item: "pneumaticcraft:advanced_air_compressor"
+			}],
+			rewards: [{
+				id: "41504D514A1AC6AA",
+				type: "item",
+				item: "pneumaticcraft:advanced_pressure_tube",
+				count: 16
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 9.0d,
+			dependencies: [
+				"4AF479936774B93B",
+				"08F90D7665FEF31E"
+			],
+			id: "5553A1458BBAFEDE",
+			tasks: [
+				{
+					id: "3555A6E04A9E40CA",
+					type: "item",
+					item: "pneumaticcraft:assembly_controller"
+				},
+				{
+					id: "55F8FF3CCFFE7A65",
+					type: "item",
+					item: "pneumaticcraft:assembly_platform"
+				},
+				{
+					id: "3E344FBCFFAA7C14",
+					type: "item",
+					item: "pneumaticcraft:assembly_io_unit_import"
+				},
+				{
+					id: "4E1984C8A544CFF8",
+					type: "item",
+					item: "pneumaticcraft:assembly_io_unit_export"
+				},
+				{
+					id: "1F68B2AF87EE7E15",
+					type: "item",
+					item: "pneumaticcraft:assembly_drill"
+				},
+				{
+					id: "1D92632D69997B46",
+					type: "item",
+					item: "pneumaticcraft:assembly_laser"
+				}
+			],
+			rewards: [{
+				id: "7F5F1B5848E84A42",
+				type: "item",
+				item: "minecraft:emerald",
+				count: 8
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 9.0d,
+			subtitle: "Make sure to link your tablet with two chests: one for input items (such as emeralds), and the other for delivery of the items ordered!",
+			dependencies: ["60C1C0D08B7F0F48"],
+			id: "2368F298CE0B9D82",
+			tasks: [{
+				id: "05116EE262B84727",
+				type: "item",
+				item: "pneumaticcraft:amadron_tablet"
+			}],
+			rewards: [{
+				id: "65CE1DFF69ACA111",
+				type: "item",
+				item: "minecraft:emerald",
+				count: 8
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 10.5d,
+			subtitle: "Etch PCB's easily and without the light box!",
+			dependencies: [
+				"2368F298CE0B9D82",
+				"5553A1458BBAFEDE"
+			],
+			id: "5EEE141DA11CCFA1",
+			tasks: [{
+				id: "7100E948481B98F6",
+				type: "item",
+				item: "pneumaticcraft:assembly_program_drill_laser"
+			}],
+			rewards: [{
+				id: "474CCADDB86C4163",
+				type: "item",
+				item: "pneumaticcraft:speed_upgrade",
+				count: 8
+			}]
+		},
+		{
+			x: 4.5d,
+			y: 0.0d,
+			dependencies: ["657D779C1EE202EC"],
+			id: "05E2F34B511B13E0",
+			tasks: [{
+				id: "43499DA016931592",
+				type: "item",
+				item: "pneumaticcraft:etching_acid_bucket"
+			}],
+			rewards: [{
+				id: "0E2708B67A74F73F",
+				type: "item",
+				item: "pneumaticcraft:empty_pcb"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: 7.5d,
+			dependencies: ["05E2F34B511B13E0"],
+			id: "4CBD1999D2DE3B59",
+			tasks: [{
+				id: "46811FF91F30E2C2",
+				type: "item",
+				item: "pneumaticcraft:empty_pcb"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: 9.0d,
+			dependencies: ["4CBD1999D2DE3B59"],
+			id: "30F29E93893ACD5F",
+			tasks: [{
+				id: "66A60FE3A9FB6C3C",
+				type: "item",
+				item: "pneumaticcraft:uv_light_box"
+			}],
+			rewards: [{
+				id: "0AFAF118A68FB78D",
+				type: "item",
+				item: "pneumaticcraft:security_upgrade"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: 10.5d,
+			subtitle: "A fully UV exposed PCB!",
+			dependencies: ["30F29E93893ACD5F"],
+			id: "02D146363BD26605",
+			tasks: [{
+				id: "1A4D27AE01A68B33",
+				type: "item",
+				item: {
+					id: "pneumaticcraft:empty_pcb",
+					Count: 1b,
+					tag: {
+						"pneumaticcraft:uv_exposure": 100
+					}
+				}
+			}]
+		},
+		{
+			x: 4.5d,
+			y: 12.0d,
+			subtitle: "Drop your PCB into etching acid and wait!",
+			dependencies: ["02D146363BD26605"],
+			id: "7D762033DF2F77B9",
+			tasks: [{
+				id: "0B4A8B76991D70E5",
+				type: "item",
+				item: "pneumaticcraft:unassembled_pcb"
+			}],
+			rewards: [{
+				id: "0AF017680482E041",
+				type: "item",
+				item: "pneumaticcraft:unassembled_pcb"
+			}]
+		},
+		{
+			x: 3.5d,
+			y: 7.5d,
+			dependencies: [
+				"4AF479936774B93B",
+				"657D779C1EE202EC"
+			],
+			id: "14AD5C8CB8D95D3C",
+			tasks: [{
+				id: "46FED97BFF293790",
+				type: "item",
+				item: "pneumaticcraft:capacitor"
+			}],
+			rewards: [{
+				id: "5FCA91801D9CD42E",
+				type: "item",
+				item: "pneumaticcraft:capacitor"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: 9.0d,
+			dependencies: [
+				"7C93B5081895B4CA",
+				"14AD5C8CB8D95D3C",
+				"7D762033DF2F77B9"
+			],
+			id: "08F90D7665FEF31E",
+			tasks: [{
+				id: "02AEB2664FBA178A",
+				type: "item",
+				item: "pneumaticcraft:printed_circuit_board"
+			}],
+			rewards: [{
+				id: "20C949F8E3F17AAA",
+				type: "item",
+				item: "pneumaticcraft:printed_circuit_board"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: 10.5d,
+			dependencies: ["08F90D7665FEF31E"],
+			id: "468A9C04A10FCCFC",
+			tasks: [{
+				id: "4482B68A0E1583A0",
+				type: "item",
+				item: "pneumaticcraft:flux_compressor"
+			}],
+			rewards: [{
+				id: "0D0ED2E3D2208794",
+				type: "item",
+				item: "pneumaticcraft:flux_compressor"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 0.0d,
+			dependencies: ["60C1C0D08B7F0F48"],
+			id: "0CB497D21759B002",
+			tasks: [{
+				id: "7F65FDA4C91BAB10",
+				type: "item",
+				item: "pneumaticcraft:pressure_tube"
+			}],
+			rewards: [{
+				id: "040FEC75E1C060CB",
+				type: "item",
+				item: "pneumaticcraft:pressure_tube",
+				count: 16
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 0.0d,
+			dependencies: ["0CB497D21759B002"],
+			id: "1F04BAEFE7AC0731",
+			tasks: [{
+				id: "089C92D2117F1698",
+				type: "item",
+				item: "pneumaticcraft:advanced_pressure_tube"
+			}],
+			rewards: [{
+				id: "786B3204831E5F14",
+				type: "item",
+				item: "pneumaticcraft:advanced_pressure_tube",
+				count: 16
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 1.5d,
+			subtitle: "Make sure your pipes don't explode!",
+			dependencies: ["0CB497D21759B002"],
+			id: "7D73224469D20B36",
+			tasks: [{
+				id: "1EE5B886E82B0A71",
+				type: "item",
+				item: "pneumaticcraft:safety_tube_module"
+			}],
+			rewards: [{
+				id: "3BA9929A69A88C43",
+				type: "item",
+				item: "minecraft:redstone",
+				count: 16
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 12.5d,
+			dependencies: [
+				"5EEE141DA11CCFA1",
+				"468A9C04A10FCCFC"
+			],
+			id: "3865FE585ED8C3C6",
+			tasks: [{
+				id: "3FE76F5FB7F479F9",
+				type: "checkmark",
+				title: "Clout!"
+			}],
+			rewards: [{
+				id: "4A8D4F6697A001ED",
+				type: "command",
+				auto: "enabled",
+				command: "/say @p has completed the PneumaticCraft questline!",
+				player_command: false
+			}]
+		}
+	]
+}

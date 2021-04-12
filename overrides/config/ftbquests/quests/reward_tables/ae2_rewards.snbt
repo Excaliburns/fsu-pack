@@ -1,0 +1,20 @@
+{
+	id: "77C784B1F285613E",
+	order_index: 2,
+	title: "AE2 Rewards",
+	loot_size: 1,
+	rewards: [
+		{
+			item: "appliedenergistics2:fluix_smart_dense_cable",
+			count: 8
+		},
+		{
+			item: "appliedenergistics2:fluix_glass_cable",
+			count: 16
+		},
+		{
+			item: "appliedenergistics2:fluix_smart_cable",
+			count: 16
+		}
+	]
+}
