@@ -15,4 +15,5 @@ onEvent('jei.hide.items', event => {
 	event.hide('mekanism:copper_ore')
 	event.hide('mekanism:tin_ore')
 	event.hide('mekanism:lead_ore')
+	event.hide('tconstruct:copper_ore')
 })

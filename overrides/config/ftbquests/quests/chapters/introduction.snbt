@@ -63,8 +63,15 @@
 								tag: {
 									mantle: {
 										book: {
-											page: ""
+											current_page: ""
 										}
+									},
+									"akashictome:displayName": {
+										text: "Materials and You"
+									},
+									"akashictome:is_morphing": 1b,
+									display: {
+										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Materials and You"}]}'
 									}
 								}
 							},
