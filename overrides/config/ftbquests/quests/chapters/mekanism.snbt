@@ -60,8 +60,8 @@
 				item: "mekanism:metallurgic_infuser"
 			}],
 			rewards: [{
-				id: "4EAD62617720384D",
-				type: "random",
+				id: "26C2BDA2A3538BB5",
+				type: "choice",
 				table_id: 611210796745585636L
 			}]
 		},
@@ -76,8 +76,8 @@
 				item: "mekanism:enrichment_chamber"
 			}],
 			rewards: [{
-				id: "5A04A5855C06515E",
-				type: "random",
+				id: "17C70DE07DDCE45F",
+				type: "choice",
 				table_id: 611210796745585636L
 			}]
 		},
@@ -92,8 +92,8 @@
 				item: "mekanism:osmium_compressor"
 			}],
 			rewards: [{
-				id: "18DC9F532E4818E2",
-				type: "random",
+				id: "00DE77C47653595E",
+				type: "choice",
 				table_id: 611210796745585636L
 			}]
 		},
@@ -371,8 +371,8 @@
 				item: "mekanism:precision_sawmill"
 			}],
 			rewards: [{
-				id: "71B27AD4128634E8",
-				type: "random",
+				id: "1551AFCEA82A6538",
+				type: "choice",
 				table_id: 611210796745585636L
 			}]
 		},
@@ -387,8 +387,8 @@
 				item: "mekanism:crusher"
 			}],
 			rewards: [{
-				id: "19734D954598DD3B",
-				type: "random",
+				id: "0F0C8BB006CB78A7",
+				type: "choice",
 				table_id: 611210796745585636L
 			}]
 		},

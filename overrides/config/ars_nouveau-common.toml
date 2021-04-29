@@ -31,6 +31,8 @@
 	stalkerHuntsAnimals = false
 	#Should the Wilden Defender attack animals?
 	defenderHuntsAnimals = false
+	#Dimensions where hostile mobs will not spawn. Ex: minecraft:overworld. Run /forge dimensions for a list.
+	dimensionBlacklist = []
 
 #Mana
 [mana]
@@ -184,6 +186,12 @@
 	wither = true
 	#Knockback enabled?
 	gust = true
+	#Underfoot enabled?
+	underfoot = true
+	#Summon Decoy enabled?
+	summon_decoy = true
+	#Hex enabled?
+	hex = true
 
 #Spell Cost
 [spell_cost]
@@ -367,6 +375,15 @@
 	#Knockback cost
 	#Range: > -2147483648
 	gust_cost = 15
+	#Underfoot cost
+	#Range: > -2147483648
+	underfoot_cost = 5
+	#Summon Decoy cost
+	#Range: > -2147483648
+	summon_decoy_cost = 200
+	#Hex cost
+	#Range: > -2147483648
+	hex_cost = 100
 
 #Starting Spells
 ["Starter Spells"]

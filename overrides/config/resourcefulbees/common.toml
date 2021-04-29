@@ -242,6 +242,11 @@
 	#Should bees die when their Y-level is below 0?
 	#Note: If false, bees will get stuck just below y-0 and not move. **May not be useful with new AI**
 	beeDiesInVoid = true
+	#
+	#This is an experimental setting. Using this setting means bees will need to be told by the player which flower and hive to use.
+	#Bees will not scan surroundings for flowers or hives and will instead go to their designated spot until changed.
+	#WARNING: For now, this will prevent bees from having their wander goal attached which effectively makes them dumb (seriously, they'll just hover in one spot), however it would also significantly improve performance until pathfinding can be optimized.
+	use_experimental_manual_mode = false
 
 ["Honeycomb Options"]
 	#

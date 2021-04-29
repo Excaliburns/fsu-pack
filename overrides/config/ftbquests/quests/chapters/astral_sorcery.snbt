@@ -33,25 +33,11 @@
 				id: "0D492A9550459BDF",
 				type: "item",
 				item: "astralsorcery:spectral_relay"
-			}]
-		},
-		{
-			x: -3.5d,
-			y: 2.0d,
-			dependencies: ["12C0C71BA3796AE8"],
-			id: "2EE1A7263F79167D",
-			tasks: [{
-				id: "5A3B14499334D4CD",
+			}],
+			rewards: [{
+				id: "65EEB7BD6CBF8234",
 				type: "item",
-				item: {
-					id: "astralsorcery:resonator",
-					Count: 1b,
-					tag: {
-						astralsorcery: {
-							upgrades: [0]
-						}
-					}
-				}
+				item: "astralsorcery:glass_lens"
 			}]
 		},
 		{
@@ -61,6 +47,7 @@
 				"4F59AE58A0E49271",
 				"2FF0E710236ADB68"
 			],
+			dependency_requirement: "one_completed",
 			id: "20A1191C516C6EB4",
 			tasks: [{
 				id: "2008DFDEC3EC8901",
@@ -173,26 +160,6 @@
 				type: "item",
 				item: "minecraft:iron_ore",
 				count: 16
-			}]
-		},
-		{
-			x: 1.0d,
-			y: -3.5d,
-			description: [""],
-			dependencies: ["7F5F749D1A2779A3"],
-			id: "2C375063ED37BA60",
-			tasks: [{
-				id: "7EB9DE2A7B55A312",
-				type: "item",
-				item: {
-					id: "astralsorcery:attuned_rock_crystal",
-					Count: 1b,
-					tag: {
-						astralsorcery: {
-							constellationName: "astralsorcery:aevitas"
-						}
-					}
-				}
 			}]
 		},
 		{

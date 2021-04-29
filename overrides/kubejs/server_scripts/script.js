@@ -39,6 +39,21 @@ onEvent('recipes', event => {
     'mekanism:alloy_atomic',
     'pneumaticcraft:transistor'
   ])
+  
+  // chests/wooden
+  
+  event.shapeless('1x minecraft:chest', [
+	'#forge:chests/wooden'
+  ])
+  
+  event.shaped(item.of('storagedrawers:oak_full_drawers_1'), [
+  'AAA',
+  ' B ',
+  'AAA'
+  ], {
+	  A: '#minecraft:planks',
+	  B: '#forge:chests/wooden'
+  })
 
   // Mana and artifice
   event.shapeless('1x mana-and-artifice:guide_book', ['minecraft:book', 'mana-and-artifice:vinteum_ingot'])
@@ -58,6 +73,7 @@ onEvent('recipes', event => {
   event.recipes.mekanism.crushing(item.of('mana-and-artifice:vinteum_dust'), 'mana-and-artifice:vinteum_ingot')
 
   event.recipes.mekanism.enriching(item.of('mekanism:dust_uranium', 2), '#forge:ores/yellorite')
+
 })
 
 onEvent('item.entity_interact',  event => {

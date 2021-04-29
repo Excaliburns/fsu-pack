@@ -38,23 +38,6 @@
 		},
 		{
 			x: -2.0d,
-			y: -2.0d,
-			dependencies: ["3771156943031DB6"],
-			id: "1B60FF8C8B048EC3",
-			tasks: [{
-				id: "23F0A632FCDC04F7",
-				type: "item",
-				item: "refinedstorage:cable"
-			}],
-			rewards: [{
-				id: "037DE9A9645BD545",
-				type: "item",
-				item: "refinedstorage:cable",
-				count: 32
-			}]
-		},
-		{
-			x: -2.0d,
 			y: 0.0d,
 			dependencies: ["1672FFDBD444F267"],
 			id: "3771156943031DB6",
@@ -131,26 +114,9 @@
 			}]
 		},
 		{
-			x: -5.0d,
-			y: 0.0d,
-			dependencies: ["1672FFDBD444F267"],
-			id: "25DB1FD1D0B90935",
-			tasks: [{
-				id: "7A4AABD1582C1656",
-				type: "item",
-				item: "refinedstorage:silicon"
-			}],
-			rewards: [{
-				id: "31F7AF7E57CAE3DF",
-				type: "item",
-				item: "minecraft:quartz",
-				count: 32
-			}]
-		},
-		{
 			x: -6.5d,
 			y: 0.0d,
-			dependencies: ["25DB1FD1D0B90935"],
+			dependencies: ["1672FFDBD444F267"],
 			id: "58CB9CBC8D7B66A8",
 			tasks: [{
 				id: "187021AEBB26685A",
@@ -166,7 +132,7 @@
 		{
 			x: -6.5d,
 			y: -1.0d,
-			dependencies: ["25DB1FD1D0B90935"],
+			dependencies: ["1672FFDBD444F267"],
 			id: "2D2128148C299DA0",
 			tasks: [{
 				id: "6182D75B4590F18C",
@@ -182,7 +148,7 @@
 		{
 			x: -6.5d,
 			y: 1.0d,
-			dependencies: ["25DB1FD1D0B90935"],
+			dependencies: ["1672FFDBD444F267"],
 			id: "6380387CF020EF57",
 			tasks: [{
 				id: "72E156D2B74AB36B",

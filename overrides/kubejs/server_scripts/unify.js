@@ -1,189 +1,155 @@
-// priority: 100
+// Whether or not to unify items in inventory
+global["INVENTORY_UNIFY"] = true
+// Whether or not to unify items in world
+global["ITEM_UNIFY"] = true
+// Whether or not to unify recipes
+global["RECIPE_UNIFY"] = true
+// Whether or not to hide not-first materials in jei (requires secondary script)
+global["HIDE_UNIFIED_ITEMS"] = true
+// Whether or not to disable non-priority ore-gen
+global["UNIFY_ORE_GEN"] = true
 
-settings.logAddedRecipes = false
-settings.logRemovedRecipes = false
-settings.logSkippedRecipes = false
-settings.logErroringRecipes = false
+// Mod priorities
+global["unifypriorities"] = [
+	"thermal",
+    "mekanism",
+    "silents_mechanisms",
+    "silentgems",
+    "chemlib"
+]
 
-events.listen('recipes', event => {
-    const { smelting, blasting } = event.recipes.minecraft
+// Add oredictionary tags here to unify (or use javascript to generate it!)
+var tags = [
+    "forge:plates/iron",
+    "forge:gears/iron"
+]
+// Block tags for ore gen unification (an equal item tag is required for this to work, which is the case with ores normally)
+/*var btags = [
+    "forge:ores/copper",
+    "forge:ores/tin",
+    "forge:ores/aluminum",
+    "forge:ores/lead",
+    "forge:ores/silver",
+    "forge:ores/nickel",
+    "forge:ores/platinum",
+    "forge:ores/uranium",
+    "forge:ores/iridium",
+    "forge:ores/zinc",
+    "forge:ores/osmium",
+    "forge:ores/sulfur",
+]*/
+// Easier way to add multiple tags (feel free to add empty extra tags, this will ignore them)
+var tagGen = [
+    "gold=gears,plates",
+    "diamond=gears,plates",
+    "copper=storage_blocks,ingots,nuggets,dusts,ores,gears,plates",
+    "tin=storage_blocks,ingots,nuggets,dusts,ores,gears,plates",
+    "aluminum=storage_blocks,ingots,nuggets,dusts,ores,gears,plates",
+    "lead=storage_blocks,ingots,nuggets,dusts,ores,gears,plates",
+    "silver=storage_blocks,ingots,nuggets,dusts,ores,gears,plates",
+    "nickel=storage_blocks,ingots,nuggets,dusts,ores,gears,plates",
+    "bronze=storage_blocks,ingots,nuggets,dusts,ores,gears,plates",
+    "steel=storage_blocks,ingots,nuggets,dusts",
+    "platinum=storage_blocks,ingots,nuggets,dusts,ores",
+    "uranium=storage_blocks,ingots,nuggets,dusts,ores",
+    "iridium=storage_blocks,ingots,nuggets,dusts,ores",
+    "zinc=storage_blocks,ingots,nuggets,dusts,ores",
+    "osmium=ingots,ores",
+    "sulfur=dusts,ores"
+]
+for (let line of tagGen) {
+    let data = line.split("=")
+    for (let type of data[1].split(",")) {
+        tags.push("forge:" + type + "/" + data[0])
+    }
+}
 
-    var unifyMetal = function (name, hasOre, nuggetItem, ingotItem, blockItem, dustItem, gearItem, plateItem) {
-        if (ingotItem !== '') event.replaceOutput('#forge:ingots/' + name, ingotItem)
-        if (dustItem !== '') event.replaceOutput('#forge:dusts/' + name, dustItem)
-        if (nuggetItem !== '') event.replaceOutput('#forge:nuggets/' + name, nuggetItem)
-        if (blockItem !== '') event.replaceOutput('#forge:storage_blocks/' + name, blockItem)
-        if (gearItem !== '') event.replaceOutput('#forge:gears/' + name, gearItem)
-        if (plateItem !== '') event.replaceOutput('#forge:plates/' + name, plateItem)
-        event.remove({output: '#forge:ingots/' + name, type: 'minecraft:smelting'})
-        event.remove({output: '#forge:ingots/' + name, type: 'minecraft:blasting'})
-        if (dustItem !== '' && ingotItem !== '') {
-            smelting(ingotItem, '#forge:dusts/' + name).xp(0.7)
-            blasting(ingotItem, '#forge:dusts/' + name).xp(0.7)
-        }
-        if (hasOre && ingotItem !== '') {
-            smelting(ingotItem, '#forge:ores/' + name).xp(0.7)
-            blasting(ingotItem, '#forge:ores/' + name).xp(0.7)
+// Replace input and output of recipes (and iterate over tags!)
+onEvent("recipes", event => {
+    // Iterate over tags (they should be loaded)
+    var tagitems = new Map()
+    tagLoop:
+    for (let tag of tags) {
+        let ingr = Ingredient.of("#"+tag)
+        if (ingr) {
+            let stacks = ingr.getStacks().toArray()
+            for (let mod of global["unifypriorities"]) {
+                for (let stack of stacks) {
+                    if (stack.getMod() == mod) {
+                        tagitems[tag] = stack.getId()
+                        continue tagLoop
+                    }
+                }
+            }
+            if (stacks.length > 0) tagitems[tag] = stacks[0].getId()
         }
     }
-
-    unifyMetal('iron', true, 'minecraft:iron_nugget', 'minecraft:iron_ingot', 'minecraft:iron_block', 'thermal:iron_dust', 'thermal:iron_gear', 'thermal:iron_plate')
-    unifyMetal('gold', true, 'minecraft:gold_nugget', 'minecraft:gold_ingot', 'minecraft:gold_block', 'thermal:gold_dust', 'thermal:gold_gear', 'thermal:gold_plate')
-    unifyMetal('diamond', true, '', '', 'minecraft:diamond_block', 'thermal:diamond_dust', 'thermal:diamond_gear', '')
-    unifyMetal('steel', false, 'immersiveengineering:nugget_steel', 'immersiveengineering:ingot_steel', 'immersiveengineering:storage_steel', 'immersiveengineering:dust_steel', '', 'immersiveengineering:plate_steel')
-    unifyMetal('copper', true, 'thermal:copper_nugget', 'thermal:copper_ingot', 'thermal:copper_block', 'thermal:copper_dust', 'thermal:copper_gear', 'thermal:copper_plate')
-    unifyMetal('silver', true, 'thermal:silver_nugget', 'thermal:silver_ingot', 'thermal:silver_block', 'thermal:silver_dust', 'thermal:silver_gear', 'thermal:silver_plate')
-    unifyMetal('nickel', true, 'thermal:nickel_nugget', 'thermal:nickel_ingot', 'thermal:nickel_block', 'thermal:nickel_dust', 'thermal:nickel_gear', 'thermal:nickel_plate')
-    unifyMetal('uranium', true, 'mekanism:nugget_uranium', 'mekanism:ingot_uranium', 'mekanism:block_uranium', 'mekanism:dust_uranium', '', 'immersiveengineering:plate_uranium')
-    unifyMetal('tin', true, 'thermal:tin_nugget', 'thermal:tin_ingot', 'thermal:tin_block', 'thermal:tin_dust', 'thermal:tin_gear', 'thermal:tin_plate')
-    unifyMetal('lead', true, 'thermal:lead_nugget', 'thermal:lead_ingot', 'thermal:lead_block', 'thermal:lead_dust', 'thermal:lead_gear', 'thermal:lead_plate')
-    unifyMetal('bronze', false, 'thermal:bronze_nugget', 'thermal:bronze_ingot', 'thermal:bronze_block', 'thermal:bronze_dust', 'thermal:bronze_gear', 'thermal:bronze_plate')
-    unifyMetal('electrum', false, 'thermal:electrum_nugget', 'thermal:electrum_ingot', 'thermal:electrum_block', 'thermal:electrum_dust', 'thermal:electrum_gear', 'thermal:electrum_plate')
-    unifyMetal('bronze', false, 'thermal:bronze_nugget', 'thermal:bronze_ingot', 'thermal:bronze_block', 'thermal:bronze_dust', 'thermal:bronze_gear', 'thermal:bronze_plate')
-    unifyMetal('constantan', false, 'thermal:constantan_nugget', 'thermal:constantan_ingot', 'thermal:constantan_block', 'thermal:constantan_dust', 'thermal:constantan_gear', 'thermal:constantan_plate')
-
-    event.remove({output: 'immersiveengineering:slab_storage_constantan'})
-    event.replaceOutput('mekanism:copper_ore', 'thermal:copper_ore')
-    event.replaceOutput('mekanism:lead_ore', 'thermal:lead_ore')
-    event.replaceOutput('mekanism:tin_ore', 'thermal:tin_ore')
-
-    event.remove({output: 'mcwbridges:iron_platform'})
-    event.replaceInput('mcwbridges:iron_platform', '#forge:plates/iron')
-    event.remove({output: 'mcwbridges:iron_rod'})
-    event.replaceInput('mcwbridges:iron_rod', '#forge:rods/iron')
-
-    event.replaceInput('appliedenergistics2:silicon', '#forge:silicon')
-    event.replaceOutput('appliedenergistics2:silicon', 'refinedstorage:silicon')
-
-    event.replaceInput('thermal:quartz_dust', '#forge:dusts/quartz')
-    event.replaceOutput('thermal:quartz_dust', 'appliedenergistics2:nether_quartz_dust')
-    event.replaceInput('mekanism:dust_quartz', '#forge:dusts/quartz')
-    event.replaceOutput('mekanism:dust_quartz', 'appliedenergistics2:nether_quartz_dust')
-
-    event.replaceInput('mekanism:dust_quartz', '#forge:dusts/quartz')
-    event.replaceOutput('mekanism:dust_quartz', 'appliedenergistics2:nether_quartz_dust')
-
-    event.replaceInput('mekanism:dust_lapis_lazuli', '#forge:dusts/lapis')
-    event.replaceOutput('mekanism:dust_lapis_lazuli', 'thermal:lapis_dust')
-
-    event.replaceInput('mekanism:dust_emerald', '#forge:dusts/emerald')
-    event.replaceOutput('mekanism:dust_emerald', 'thermal:emerald_dust')
-
-    event.replaceInput('immersiveengineering:dust_wood', '#forge:sawdust')
-    event.replaceOutput('immersiveengineering:dust_wood', 'thermal:sawdust')
-    event.replaceInput('mekanism:sawdust', '#forge:sawdust')
-    event.replaceOutput('mekanism:sawdust', 'thermal:sawdust')
-
-    event.replaceInput('immersiveengineering:dust_sulfur', '#forge:dusts/sulfur')
-    event.replaceOutput('immersiveengineering:dust_sulfur', 'thermal:sulfur_dust')
-    event.replaceInput('mekanism:dust_sulfur', '#forge:dusts/sulfur')
-    event.replaceOutput('mekanism:dust_sulfur', 'thermal:sulfur_dust')
-
-    event.replaceOutput('bloodmagic:coalsand', 'mekanism:dust_coal')
-    event.replaceOutput('bloodmagic:saltpeter', 'immersiveengineering:dust_saltpeter')
-    event.replaceOutput('bloodmagic:sulfur', 'thermal:sulfur_dust')
-    event.replaceOutput('bloodmagic:ironsand', 'thermal:iron_dust')
-    event.replaceOutput('bloodmagic:goldsand', 'thermal:gold_dust')
-
-    event.replaceInput('immersiveengineering:slag', '#forge:slag')
-    event.replaceInput('thermal:slag', '#forge:slag')
-    event.replaceOutput('immersiveengineering:slag', 'thermal:slag')
-
-    event.replaceInput('immersiveengineering:creosote_bucket', '#forge:creosote_bucket')
-    event.replaceInput('thermal:creosote_bucket', '#forge:creosote_bucket')
+    // Update tags
+    global["unifytags"] = tags
+    global["tagitems"] = tagitems
+    
+    // Unify the rest
+    if (global["RECIPE_UNIFY"]) {
+        for (let tag of global["unifytags"]) {
+            let ingr = Ingredient.of("#"+tag)
+            if (ingr) {
+                let stacks = ingr.getStacks().toArray()
+                let oItem = global["tagitems"][tag]
+                for (let tItem of stacks) {
+                    event.replaceInput({}, tItem.getId(), "#"+tag)
+                    event.replaceOutput({}, tItem.getId(), oItem)
+                }
+            }
+        }
+    }
 })
 
-events.listen('item.tags', event => {
-    event.get('forge:ores/copper').remove('immersiveengineering:ore_copper')
-    event.get('forge:ores/copper').remove('mekanism:copper_ore')
-    event.get('forge:ores/copper').remove('create:copper_ore')
-    event.get('forge:ores/lead').remove('immersiveengineering:ore_lead')
-    event.get('forge:ores/lead').remove('mekanism:lead_ore')
-    event.get('forge:ores/silver').remove('immersiveengineering:ore_silver')
-    event.get('forge:ores/nickel').remove('immersiveengineering:ore_nickel')
-    event.get('forge:ores/uranium').remove('immersiveengineering:ore_uranium')
-    event.get('forge:ores/uranium').remove('bigreactors:yellorite_ore')
-    event.get('forge:ores/tin').remove('mekanism:tin_ore')
-
-    event.get('appliedenergistics2:silicon').remove('appliedenergistics2:silicon')
-    event.get('appliedenergistics2:silicon').add('refinedstorage:silicon')
-
-    event.get('appliedenergistics2:dusts/quartz').remove('thermal:quartz_dust')
-    event.get('appliedenergistics2:dusts/quartz').remove('mekanism:dust_quartz')
-    event.get('forge:dusts/quartz').remove('thermal:quartz_dust')
-    event.get('forge:dusts/quartz').remove('mekanism:dust_quartz')
-
-    event.get('forge:dusts/lapis').remove('mekanism:dust_lapis_lazuli')
-
-    event.get('forge:dusts/emerald').remove('mekanism:dust_emerald')
-
-    event.get('forge:sawdust').remove('immersiveengineering:dust_wood')
-    event.get('forge:dusts/wood').remove('immersiveengineering:dust_wood')
-    event.get('forge:dusts/wood').remove('mekanism:sawdust')
-    event.get('forge:dusts/wood').add('thermal:sawdust')
-
-    event.get('forge:dusts/sulfur').remove('immersiveengineering:dust_sulfur')
-    event.get('minecolonies:blacksmith_ingredient_excluded').remove('mekanism:dust_sulfur')
-    event.get('minecolonies:blacksmith_product_excluded').remove('mekanism:dust_sulfur')
-    event.get('forge:dusts/sulfur').remove('mekanism:dust_sulfur')
-    event.get('minecolonies:dyer_ingredient').remove('mekanism:dust_sulfur')
-    event.get('minecolonies:dyer_product').remove('mekanism:dust_sulfur')
-    event.get('forge:dyes/yellow').remove('mekanism:dust_sulfur')
-    event.get('minecolonies:fletcher_ingredient_excluded').remove('mekanism:dust_sulfur')
-    event.get('minecolonies:glassblower_ingredient_excluded').remove('mekanism:dust_sulfur')
-    event.get('minecolonies:stonemason_ingredient_excluded').remove('mekanism:dust_sulfur')
-    event.get('minecolonies:blacksmith_ingredient_excluded').add('thermal:sulfur_dust')
-    event.get('minecolonies:blacksmith_product_excluded').add('thermal:sulfur_dust')
-    event.get('forge:dusts/sulfur').add('thermal:sulfur_dust')
-    event.get('minecolonies:dyer_ingredient').add('thermal:sulfur_dust')
-    event.get('minecolonies:dyer_product').add('thermal:sulfur_dust')
-    event.get('forge:dyes/yellow').add('thermal:sulfur_dust')
-    event.get('minecolonies:fletcher_ingredient_excluded').add('thermal:sulfur_dust')
-    event.get('minecolonies:glassblower_ingredient_excluded').add('thermal:sulfur_dust')
-    event.get('minecolonies:stonemason_ingredient_excluded').add('thermal:sulfur_dust')
-
-    event.get('forge:dusts/iron').remove('bloodmagic:ironsand')
-    event.get('forge:dusts/gold').remove('bloodmagic:goldsand')
-    event.get('forge:dusts/sulfur').remove('bloodmagic:sulfur')
-    event.get('forge:dusts/saltpeter').remove('bloodmagic:saltpeter')
-    event.get('forge:dusts/coal').remove('bloodmagic:coalsand')
-    event.get('forge:dyes/yellow').add('thermal:sulfur_dust')
-
-    event.get('forge:creosote_bucket').add([
-        'immersiveengineering:creosote_bucket',
-        'thermal:creosote_bucket'
-    ])
+// Handle inventory change (to check for unificaiton)
+// Unfortunately it gets called twice due to setting the inventory.
+onEvent("player.inventory.changed", event => {
+    if (global["INVENTORY_UNIFY"] && event.getEntity().getOpenInventory().getClass().getName() == "net.minecraft.inventory.container.PlayerContainer") {
+        // Get held item
+        var heldItem = event.getItem()
+        
+        // Check for every tag in the list
+        for (let tag of global["unifytags"]) {
+            let ingr = Ingredient.of("#"+tag)
+            if (ingr.test(heldItem)) {
+                // If item is in tag, determine if it needs to be changed
+                let tItem = global["tagitems"][tag]
+                if (tItem != heldItem.getId()) {
+                    // Fix slot number
+                    let slot = event.getSlot()
+                    if (slot <= 5) slot += 36
+                    else if (slot == 45) slot = 40
+                    else if (slot >= 36) slot -= 36
+                    // Update item
+                    event.getEntity().inventory.set(slot, Item.of(tItem, heldItem.getCount()))
+                }
+                break
+            }
+        }
+    }
 })
 
-events.listen('block.tags', event => {
-    event.get('forge:ores/copper').remove('immersiveengineering:ore_copper')
-    event.get('forge:ores/copper').remove('mekanism:copper_ore')
-    event.get('forge:ores/copper').remove('create:copper_ore')
-    event.get('forge:ores/lead').remove('immersiveengineering:ore_lead')
-    event.get('forge:ores/lead').remove('mekanism:lead_ore')
-    event.get('forge:ores/silver').remove('immersiveengineering:ore_silver')
-    event.get('forge:ores/nickel').remove('immersiveengineering:ore_nickel')
-    event.get('forge:ores/uranium').remove('immersiveengineering:ore_uranium')
-    event.get('forge:ores/uranium').remove('bigreactors:yellorite_ore')
-    event.get('forge:ores/tin').remove('mekanism:tin_ore')
-
-    event.get('forge:ores').add('mana-and-artifice:vinteum_ore')
-    event.get('forge:ores').add('appliedenergistics2:quartz_ore')
-    event.get('forge:ores').add('appliedenergistics2:charged_quartz_ore')
-})
-
-events.listen('fluid.tags', event => {
-    event.get('minecraft:water').remove([
-        'create:flowing_honey',
-        'create:honey',
-        'create:flowing_chocolate',
-        'create:chocolate'
-    ])
-    event.get('forge:creosote').add([
-        'thermal:creosote'
-    ])
-})
-
-events.listen('recipes.type_registry', event => {
-    event.ignore('computercraft:impostor_shapeless')
+// Items on ground
+onEvent("entity.spawned", event => {
+    if (global["ITEM_UNIFY"]) {
+        var entity = event.getEntity()
+        if (entity.getType() == "minecraft:item") {
+            var gItem = entity.getItem()
+            // Check for every tag in the list
+            for (let tag of global["unifytags"]) {
+                let ingr = Ingredient.of("#"+tag)
+                if (ingr && ingr.test(gItem)) {
+                    // If item is in tag, determine if it needs to be changed
+                    let tItem = global["tagitems"][tag]
+                    if (tItem != gItem.getId()) {
+                        entity.setItem(Item.of(tItem, gItem.getCount()))
+                    }
+                    break
+                }
+            }
+        }
+    }
 })

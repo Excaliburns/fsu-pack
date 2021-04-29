@@ -279,6 +279,13 @@
 					type: "item",
 					auto: "disabled",
 					item: "thermal:rf_coil"
+				},
+				{
+					id: "663B7BAB3CD4951B",
+					type: "command",
+					auto: "no_toast",
+					command: "/say Don't forget to start the Thermal Expansion quests in the quest book!",
+					player_command: false
 				}
 			]
 		},
@@ -291,9 +298,9 @@
 			dependencies: ["319DA93BFB9CECE8"],
 			id: "467204B3393A688D",
 			tasks: [{
-				id: "0CC1F3DB2F8F8E2A",
+				id: "5724722C91F02F82",
 				type: "item",
-				item: "appliedenergistics2:charged_certus_quartz_crystal"
+				item: "appliedenergistics2:silicon"
 			}],
 			rewards: [
 				{
@@ -307,6 +314,13 @@
 					type: "item",
 					item: "appliedenergistics2:fluix_smart_cable",
 					count: 32
+				},
+				{
+					id: "2FBEC5D2666BBE18",
+					type: "command",
+					auto: "no_toast",
+					command: "/say Don't forget to start the Applied Energistics quests in the quest book!",
+					player_command: false
 				}
 			]
 		},
@@ -340,6 +354,13 @@
 					id: "155E16CC4648CAE5",
 					type: "item",
 					item: "industrialforegoing:machine_frame_pity"
+				},
+				{
+					id: "6B9180FAF29DC6F4",
+					type: "command",
+					auto: "no_toast",
+					command: "/say Don't forget to start the Industrial Foregoing quests in the quest book!",
+					player_command: false
 				}
 			]
 		},
@@ -356,12 +377,21 @@
 				type: "item",
 				item: "mekanism:ingot_osmium"
 			}],
-			rewards: [{
-				id: "0E5BD9C9FE1E098F",
-				type: "item",
-				item: "mekanism:alloy_infused",
-				count: 8
-			}]
+			rewards: [
+				{
+					id: "0E5BD9C9FE1E098F",
+					type: "item",
+					item: "mekanism:alloy_infused",
+					count: 8
+				},
+				{
+					id: "7994EC043A83D874",
+					type: "command",
+					auto: "no_toast",
+					command: "/say Don't forget to start the Mekanism quests in the quest book!",
+					player_command: false
+				}
+			]
 		},
 		{
 			title: "It's Over 9000 PSI!",
@@ -376,12 +406,21 @@
 				type: "item",
 				item: "pneumaticcraft:ingot_iron_compressed"
 			}],
-			rewards: [{
-				id: "318590F7B8B7163D",
-				type: "item",
-				item: "minecraft:coal",
-				count: 64
-			}]
+			rewards: [
+				{
+					id: "318590F7B8B7163D",
+					type: "item",
+					item: "minecraft:coal",
+					count: 64
+				},
+				{
+					id: "121174609BC643DD",
+					type: "command",
+					auto: "no_toast",
+					command: "/say Don't forget to start the Pneumaticraft quests in the quest book!",
+					player_command: false
+				}
+			]
 		},
 		{
 			title: "The Final Frontier",
@@ -418,12 +457,21 @@
 				type: "item",
 				item: "bloodmagic:altar"
 			}],
-			rewards: [{
-				id: "1D7440BF01EB0BD2",
-				type: "item",
-				item: "bloodmagic:soulsnare",
-				count: 16
-			}]
+			rewards: [
+				{
+					id: "1D7440BF01EB0BD2",
+					type: "item",
+					item: "bloodmagic:soulsnare",
+					count: 16
+				},
+				{
+					id: "2FCF1AD91A7D5C3A",
+					type: "command",
+					auto: "no_toast",
+					command: "/say Don't forget to start the Blood Magic quests in the quest book!",
+					player_command: false
+				}
+			]
 		},
 		{
 			title: "Star Magic!",
@@ -437,25 +485,50 @@
 				type: "item",
 				item: "astralsorcery:wand"
 			}],
-			rewards: [{
-				id: "2872D1C000F80220",
-				type: "item",
-				item: "astralsorcery:aquamarine",
-				count: 16
-			}]
+			rewards: [
+				{
+					id: "2872D1C000F80220",
+					type: "item",
+					item: "astralsorcery:aquamarine",
+					count: 16
+				},
+				{
+					id: "4A887C9CAEC3252F",
+					type: "command",
+					auto: "no_toast",
+					command: "/say Don't forget to start the Astral Sorcery quests in the quest book!",
+					player_command: false
+				}
+			]
 		},
 		{
 			title: "AE2's Little Brother",
+			icon: "refinedstorage:purple_creative_controller",
 			x: 2.0d,
 			y: 1.0d,
 			subtitle: "Basically the same thing as AE2, but different",
 			dependencies: ["319DA93BFB9CECE8"],
 			id: "62B8C67EFA92C863",
 			tasks: [{
-				id: "4A0332C9493AA736",
+				id: "662996AA6567BFC2",
 				type: "item",
-				item: "refinedstorage:controller"
-			}]
+				item: "refinedstorage:silicon"
+			}],
+			rewards: [
+				{
+					id: "68E2B30F71011666",
+					type: "command",
+					auto: "no_toast",
+					command: "/say Don't forget to start the Refined Storage quests in the quest book!",
+					player_command: false
+				},
+				{
+					id: "114F70AA5229F7A0",
+					type: "item",
+					item: "refinedstorage:cable",
+					count: 32
+				}
+			]
 		}
 	]
 }
