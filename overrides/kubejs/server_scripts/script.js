@@ -101,7 +101,7 @@ onEvent('recipes', event => {
   event.recipes.mekanism.enriching(item.of('mekanism:bio_fuel', 1), 'environmental:pink_wisteria_leaf_carpet')
   event.recipes.mekanism.enriching(item.of('mekanism:bio_fuel', 1), 'environmental:blue_wisteria_leaf_carpet')
   event.recipes.mekanism.enriching(item.of('mekanism:bio_fuel', 1), 'environmental:purple_wisteria_leaf_carpet')
-  event.recipes.mekanism.enriching(item.of('mekanism:bio_fuel', 1), 'environmental:white_wisteriar_leaf_carpet')
+  event.recipes.mekanism.enriching(item.of('mekanism:bio_fuel', 1), 'environmental:white_wisteria_leaf_carpet')
   event.recipes.mekanism.enriching(item.of('mekanism:bio_fuel', 1), 'upgrade_aquatic:river_leaf_carpet')
   event.recipes.mekanism.enriching(item.of('mekanism:bio_fuel', 1), 'autumnity:maple_leaf_carpet')
   event.recipes.mekanism.enriching(item.of('mekanism:bio_fuel', 1), 'autumnity:yellow_maple_leaf_carpet')
