@@ -41,9 +41,13 @@ onEvent('recipes', event => {
   ])
   
   // chests/wooden
-  
   event.shapeless('1x minecraft:chest', [
-	'#forge:chests/wooden'
+	  '#forge:chests/wooden'
+  ])
+
+  // Bookshelves
+  event.shapeless ('1x minecraft:bookshelf', [
+    '#forge:bookshelves'
   ])
   
   event.shaped(item.of('storagedrawers:oak_full_drawers_1'), [
