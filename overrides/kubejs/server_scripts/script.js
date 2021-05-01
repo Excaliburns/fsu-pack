@@ -18,6 +18,11 @@ onEvent('recipes', event => {
   // Environmental Tech
   event.remove({output: '/envirocore:litherite_crystal/'})
 
+  // Cyclic
+  event.remove({id: 'cyclic:disenchanter'})
+  event.remove({id: 'cyclic:anvil'})
+  event.remove({id: 'cyclic:anvil_magma'})
+
   // Add recipes
   // Angel ring
   event.shaped(item.of('angelring:itemring', 1), [
