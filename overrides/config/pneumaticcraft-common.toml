@@ -13,12 +13,12 @@
 	drones_can_import_xp_orbs = true
 	#When an Oil Lake would be generated at the surface (see 'oil_generation_chance'), percentage chance that this will actually generate a lake. Set to 0 for no surface oil lakes, and fewer lakes overall. Higher values don't guarantee surface oil lakes, but make them more likely, as well as making oil lakes more likely overall. It is recommended to adjust this value in conjunction with 'oil_generation_chance'.
 	#Range: 0 ~ 100
-	surface_oil_generation_chance = 25
+	surface_oil_generation_chance = 0
 	#Oil worldgen blacklist: add biome IDs to this list if you don't want oil worldgen to happen there.  This works in conjunction with 'oil_world_gen_category_blacklist' - if a biome matches either, then no oil lakes will generate there.
 	oil_world_gen_blacklist = ["minecraft:soul_sand_valley", "minecraft:crimson_forest", "minecraft:warped_forest", "minecraft:nether_wastes", "minecraft:the_void", "minecraft:the_end", "minecraft:small_end_islands", "minecraft:end_midlands", "minecraft:end_highlands", "minecraft:end_barrens"]
 	#Chance per chunk as a percentage to generate an Oil Lake. Set to 0 for no oil lakes. See also 'surface_oil_generation_chance'.
 	#Range: 0 ~ 100
-	oil_generation_chance = 15
+	oil_generation_chance = 0
 	#Blacklisted entity ID's, which the Vacuum Trap will not try to absorb. Note that players, tamed entities, boss entities, and PneumaticCraft drones may never be absorbed, regardless of config settings.
 	vacuum_trap_blacklist = []
 	#Fluids at least as hot as this temperature (Kelvin) will be auto-registered as Liquid Compressor fuels, the quality being dependent on fluid temperature.
