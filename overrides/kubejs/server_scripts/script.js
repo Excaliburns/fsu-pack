@@ -109,7 +109,7 @@ onEvent('recipes', event => {
   event.recipes.mekanism.enriching(item.of('mekanism:bio_fuel', 1), 'autumnity:red_maple_leaf_carpet')
 
   // Autumnity compat
-  event.recipes.mekanism.sawing(item.of('autumnity:maple_planks', 6), 'autumnity:maple_log')
+  event.recipes.mekanism.sawing(item.of('autumnity:maple_planks', 6), 'autumnity:maple_log', item.of('mekanism:sawdust').chance(0.25))
 })
 
 onEvent('item.entity_interact',  event => {
