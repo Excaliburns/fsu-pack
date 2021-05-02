@@ -107,6 +107,9 @@ onEvent('recipes', event => {
   event.recipes.mekanism.enriching(item.of('mekanism:bio_fuel', 1), 'autumnity:yellow_maple_leaf_carpet')
   event.recipes.mekanism.enriching(item.of('mekanism:bio_fuel', 1), 'autumnity:orange_maple_leaf_carpet')
   event.recipes.mekanism.enriching(item.of('mekanism:bio_fuel', 1), 'autumnity:red_maple_leaf_carpet')
+
+  // Autumnity compat
+  event.recipes.mekanism.sawing(item.of('autumnity:maple_planks', 6), 'autumnity:maple_log')
 })
 
 onEvent('item.entity_interact',  event => {
