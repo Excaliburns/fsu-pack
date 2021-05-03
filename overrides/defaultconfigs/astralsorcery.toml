@@ -703,7 +703,34 @@
 
 	[registries.mineralis_ritual_ore]
 		#Format: '<tagName>;<integerWeight>' Defines random-weighted ore-selection data. Define block-tags to select from here with associated weight. Specific mods can be blacklisted in the general AstralSorcery config in 'modidOreBlacklist'.
-		mineralis_ritual_ore = ["forge:ores/coal;5200", "forge:ores/iron;2500", "forge:ores/gold;440", "forge:ores/lapis;200", "forge:ores/redstone;600", "forge:ores/emerald;60", "forge:ores/diamond;40"]
+		mineralis_ritual_ore = [
+			"forge:ores/coal;2000", 
+			"forge:ores/iron;1750",
+			"forge:ores/copper;1250",
+			"forge:ores/tin;1250",
+			"forge:ores/osmium;1000",
+			"forge:ores/lead;700",
+			"forge:ores/silver;700",
+			"forge:ores/redstone;600",
+			"forge:ores/uranium;500",
+			"forge:ores/nickle;500",
+			"forge:ores/gold;440",
+			"forge:ores/apatite;250",
+			"forge:ores/lapis;200",
+			"mana-and-artifice:vinteum_ore;175",
+			"forge:ores/uraninite;150",
+			"forge:ores/cinnabar;115",
+			"forge:ores/mana;100",
+			"forge:ores/fluorite;100",
+			"forge:ores/niter;90",
+			"forge:ores/sulfur;90",
+			"appliedenergistics2:quartz_ore;80",
+			"forge:ores/zinc;60",
+			"forge:ores/emerald;60", 
+			"forge:ores/diamond;40",
+			"appliedenergistics2:charged_quartz_ore;10",
+			"forge:ores/quartz;1"
+			]
 
 	[registries.fluid_rarities]
 		#Defines fluid-rarities and amounts for the evershifting fountain's neromantic prime. The lower the relative rarity, the more rare the fluid. Format: <FluidName>;<guaranteedMbAmount>;<additionalRandomMbAmount>;<rarity>
