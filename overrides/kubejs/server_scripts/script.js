@@ -23,6 +23,11 @@ onEvent('recipes', event => {
   event.remove({id: 'cyclic:anvil'})
   event.remove({id: 'cyclic:anvil_magma'})
 
+  // Thermal
+  event.remove({id: 'thermal:parts/diamond_gear'})
+  event.remove({id: 'thermal:parts/gold_gear'})
+  event.remove({id: 'thermal:parts/iron_gear'})
+
   // Add recipes
   // Angel ring
   event.shaped(item.of('angelring:itemring', 1), [
