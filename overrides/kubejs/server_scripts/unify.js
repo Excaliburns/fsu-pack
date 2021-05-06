@@ -171,6 +171,7 @@ onEvent("block.tags", event => {
     event.get('forge:ores/copper').remove('immersiveengineering:ore_copper')
     event.get('forge:ores/copper').remove('mekanism:copper_ore')
     event.get('forge:ores/copper').remove('create:copper_ore')
+    event.get('forge:ores/copper').remove('tconstruct:copper_ore')
     event.get('forge:ores/lead').remove('immersiveengineering:ore_lead')
     event.get('forge:ores/lead').remove('mekanism:lead_ore')
     event.get('forge:ores/silver').remove('immersiveengineering:ore_silver')

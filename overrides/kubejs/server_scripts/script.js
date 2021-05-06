@@ -81,6 +81,8 @@ onEvent('recipes', event => {
   
   event.recipes.mekanism.enriching(item.of('thermal:nickel_dust', 2), '#forge:ores/nickel')
   event.recipes.mekanism.crushing(item.of('thermal:nickel_dust'), '#forge:ingots/nickel')
+
+  event.recipes.mekanism.crushing(item.of('thermal:sulfur_dust'), '#forge:gems/sulfur')
   
   event.recipes.mekanism.enriching(item.of('create:crushed_zinc_ore', 2), '#forge:ores/zinc')
   
