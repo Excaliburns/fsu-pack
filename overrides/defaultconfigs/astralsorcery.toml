@@ -726,8 +726,8 @@
 			"forge:ores/sulfur;90",
 			"appliedenergistics2:quartz_ore;80",
 			"forge:ores/zinc;60",
-			"forge:ores/emerald;60", 
-			"forge:ores/diamond;40",
+			"forge:ores/emerald;100", 
+			"forge:ores/diamond;120",
 			"appliedenergistics2:charged_quartz_ore;10",
 			"forge:ores/quartz;1"
 			]

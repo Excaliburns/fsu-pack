@@ -153,3 +153,29 @@ onEvent("entity.spawned", event => {
         }
     }
 })
+
+onEvent("item.tags", event => {
+    event.get('forge:ores/copper').remove('immersiveengineering:ore_copper')
+    event.get('forge:ores/copper').remove('mekanism:copper_ore')
+    event.get('forge:ores/copper').remove('create:copper_ore')
+    event.get('forge:ores/lead').remove('immersiveengineering:ore_lead')
+    event.get('forge:ores/lead').remove('mekanism:lead_ore')
+    event.get('forge:ores/silver').remove('immersiveengineering:ore_silver')
+    event.get('forge:ores/nickel').remove('immersiveengineering:ore_nickel')
+    event.get('forge:ores/uranium').remove('immersiveengineering:ore_uranium')
+    event.get('forge:ores/uranium').remove('bigreactors:yellorite_ore')
+    event.get('forge:ores/tin').remove('mekanism:tin_ore')
+})
+
+onEvent("block.tags", event => {
+    event.get('forge:ores/copper').remove('immersiveengineering:ore_copper')
+    event.get('forge:ores/copper').remove('mekanism:copper_ore')
+    event.get('forge:ores/copper').remove('create:copper_ore')
+    event.get('forge:ores/lead').remove('immersiveengineering:ore_lead')
+    event.get('forge:ores/lead').remove('mekanism:lead_ore')
+    event.get('forge:ores/silver').remove('immersiveengineering:ore_silver')
+    event.get('forge:ores/nickel').remove('immersiveengineering:ore_nickel')
+    event.get('forge:ores/uranium').remove('immersiveengineering:ore_uranium')
+    event.get('forge:ores/uranium').remove('bigreactors:yellorite_ore')
+    event.get('forge:ores/tin').remove('mekanism:tin_ore')
+})

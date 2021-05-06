@@ -87,6 +87,7 @@ onEvent('recipes', event => {
   event.recipes.mekanism.crushing(item.of('mana-and-artifice:vinteum_dust'), 'mana-and-artifice:vinteum_ingot')
 
   event.recipes.mekanism.enriching(item.of('mekanism:dust_uranium', 2), '#forge:ores/yellorite')
+  event.recipes.mekanism.enriching(item.of('mekanism:dust_uranium', 2), 'bigreactors:yellorite_ore')
 
   // Biofuel from carpets
   event.recipes.mekanism.enriching(item.of('mekanism:bio_fuel', 1), 'quark:oak_leaf_carpet')
