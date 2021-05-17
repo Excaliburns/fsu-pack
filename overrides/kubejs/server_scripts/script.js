@@ -49,25 +49,24 @@ onEvent('recipes', event => {
     'mekanism:alloy_atomic',
     'pneumaticcraft:transistor'
   ])
-  
+
   // chests/wooden
   event.shapeless('1x minecraft:chest', [
 	  '#forge:chests/wooden'
   ])
 
+  event.shaped(item.of('minecraft:chest'), [
+    'AAA',
+    'A A',
+    'AAA'
+  ], {
+    A: 'integrateddynamics:menril_planks'
+  })
+
   // Bookshelves
   event.shapeless ('1x minecraft:bookshelf', [
     '#forge:bookshelves'
   ])
-  
-  // Boats
-  event.shaped(item.of('1x minecraft:oak_boat'), [
-    '   ',
-    'A A',
-    'AAA'
-  ], {
-    A: '#minecraft:planks'
-  })
   
   event.shaped(item.of('storagedrawers:oak_full_drawers_1'), [
   'AAA',
