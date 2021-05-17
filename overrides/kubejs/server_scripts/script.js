@@ -60,6 +60,15 @@ onEvent('recipes', event => {
     '#forge:bookshelves'
   ])
   
+  // Boats
+  event.shaped(item.of('1x minecraft:oak_boat'), [
+    '   ',
+    'A A',
+    'AAA'
+  ], {
+    A: '#minecraft:planks'
+  })
+  
   event.shaped(item.of('storagedrawers:oak_full_drawers_1'), [
   'AAA',
   ' B ',
