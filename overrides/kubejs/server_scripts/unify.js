@@ -55,7 +55,8 @@ var tagGen = [
     "iridium=storage_blocks,ingots,nuggets,dusts,ores",
     "zinc=storage_blocks,ingots,nuggets,dusts,ores",
     "osmium=ingots,ores",
-    "sulfur=dusts,ores"
+    "sulfur=dusts,ores",
+	"electrum=storage_blocks,ingots,nuggets,dusts,ores,gears,plates"
 ]
 for (let line of tagGen) {
     let data = line.split("=")
