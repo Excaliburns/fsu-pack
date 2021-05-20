@@ -105,7 +105,7 @@
 			tasks: [{
 				id: "62F7FD349E840B13",
 				type: "item",
-				item: "refinedstorage:1k_storage_disk"
+				item: "refinedstorage:16k_storage_part"
 			}],
 			rewards: [{
 				id: "65FC0CD2CD774CCD",
@@ -217,7 +217,7 @@
 			tasks: [{
 				id: "3254C5B5AE6DC500",
 				type: "item",
-				item: "refinedstorage:4k_storage_disk"
+				item: "refinedstorage:4k_storage_part"
 			}],
 			rewards: [{
 				id: "543A39F1759F9908",
@@ -233,7 +233,7 @@
 			tasks: [{
 				id: "242BA9D387036829",
 				type: "item",
-				item: "refinedstorage:16k_storage_disk"
+				item: "refinedstorage:16k_storage_part"
 			}],
 			rewards: [{
 				id: "1AEC23C4C7BA95C4",
@@ -249,7 +249,7 @@
 			tasks: [{
 				id: "4407F60CE4AF0A25",
 				type: "item",
-				item: "refinedstorage:64k_storage_disk"
+				item: "refinedstorage:64k_storage_part"
 			}],
 			rewards: [{
 				id: "2D0258D807067578",
