@@ -106,12 +106,17 @@
 
 ["Target Devices"]
 	#The maximum number of targets that can be stored in the basic target definition device.
-	#Range: 1 ~ 10
+	#Requires a world reload
+	#Allowed Range: 1 ~ 10  Default: 1
 	basicDeviceTargetCount = 1
 	#The maximum number of targets that can be stored in the advanced target definition device.
 	#Range: 1 ~ 10
 	advancedDeviceTargetCount = 5
 
+#Power consumption will be calculated as follows:
+#Idle power drain = idlePowerDrain + portal size * sizePowerDrain
+#Interdimensional teleport power drain = travelPowerDrain + dimensionPowerDrain
+#Same dimension teleport power drain = travelPowerDrain + (target distance)^(1/2) * distancePowerDrain
 ["Power Consumption"]
 	#Power consumption will be calculated as follows:
 	#Idle power drain = idlePowerDrain + portal size * sizePowerDrain
@@ -149,7 +154,8 @@
 
 ["Target Cells"]
 	#The number of targets the portal stabilizer can store.
-	#Range: 1 ~ 20
+	#Requires a world reload
+	#Allowed Range: 1 ~ 20  Default: 1
 	stabilizerTargetCapacity = 1
 	#The number of targets the basic target cell can store.
 	#Range: 1 ~ 20

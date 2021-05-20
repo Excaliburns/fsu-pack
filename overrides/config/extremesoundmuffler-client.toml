@@ -14,4 +14,8 @@
 	leftButtons = false
 	#Show a message the first time a sound is muffled indicating that you can change the volume
 	showTip = true
+	#Whether or not use the dark theme
+	useDarkTheme = false
+	#Set to true if this mod wont be present in the server; it will load and save the Anchors in ESM -> ServerWorld
+	isClientSide = false
 

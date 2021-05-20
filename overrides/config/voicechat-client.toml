@@ -33,4 +33,6 @@ disabled = false
 stereo = true
 #If the voice chat icons should be hidden
 hide_icons = false
+#If the group HUD should be visible
+show_group_hud = true
 
