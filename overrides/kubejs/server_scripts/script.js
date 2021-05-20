@@ -77,6 +77,11 @@ onEvent('recipes', event => {
 	  B: '#forge:chests/wooden'
   })
 
+  // wood
+  event.shapeless ('4x minecraft:oak_planks', [
+    'sushigocrafting:avocado_log'
+  ]);
+
   // Mana and artifice
   event.shapeless('1x mana-and-artifice:guide_book', ['minecraft:book', 'mana-and-artifice:vinteum_ingot'])
 
