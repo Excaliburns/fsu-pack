@@ -4,14 +4,8 @@
 	title: "Integral Components",
 	loot_size: 1,
 	rewards: [
-		{
-			item: "thermal:upgrade_augment_1"
-		},
-		{
-			item: "thermal:upgrade_augment_2"
-		},
-		{
-			item: "thermal:upgrade_augment_3"
-		}
+		{ item: "thermal:upgrade_augment_1" },
+		{ item: "thermal:upgrade_augment_2" },
+		{ item: "thermal:upgrade_augment_3" }
 	]
 }

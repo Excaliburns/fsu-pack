@@ -199,7 +199,7 @@
 				item: {
 					id: "bloodmagic:sacrificialdagger",
 					Count: 1b,
-					tag: {}
+					tag: { }
 				}
 			}],
 			rewards: [{
@@ -277,7 +277,7 @@
 				item: {
 					id: "bloodmagic:soulgempetty",
 					Count: 1b,
-					tag: {}
+					tag: { }
 				}
 			}],
 			rewards: [{
@@ -303,7 +303,7 @@
 				item: {
 					id: "bloodmagic:soulgemlesser",
 					Count: 1b,
-					tag: {}
+					tag: { }
 				}
 			}],
 			rewards: [{
@@ -329,7 +329,7 @@
 				item: {
 					id: "bloodmagic:soulgemcommon",
 					Count: 1b,
-					tag: {}
+					tag: { }
 				}
 			}],
 			rewards: [{
@@ -355,7 +355,7 @@
 				item: {
 					id: "bloodmagic:soulgemgreater",
 					Count: 1b,
-					tag: {}
+					tag: { }
 				}
 			}],
 			rewards: [{

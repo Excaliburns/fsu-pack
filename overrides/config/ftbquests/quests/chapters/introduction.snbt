@@ -14,10 +14,9 @@
 			subtitle: "This is a modpack made for FSU, it's a kitchen sink pack with the best mods 1.16 has to offer! This questbook has quests to help guide you through some of the well-known mods in the pack.",
 			id: "319DA93BFB9CECE8",
 			tasks: [{
-				id: "5401B2A669C13FAE",
+				id: "3A5CB18A5470FF13",
 				type: "checkmark",
-				title: "Welcome to FSU Blockheads!",
-				icon: "minecraft:player_head"
+				title: "Click here to complete the quest!"
 			}],
 			rewards: [{
 				id: "5EB30DCCD8C96139",
@@ -43,6 +42,24 @@
 									}
 								}
 							},
+							tconstruct: {
+								id: "tconstruct:materials_and_you",
+								Count: 1b,
+								tag: {
+									mantle: {
+										book: {
+											current_page: "tools.broad_sword"
+										}
+									},
+									"akashictome:displayName": {
+										text: "Materials and You"
+									},
+									"akashictome:is_morphing": 1b,
+									display: {
+										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Materials and You"}]}'
+									}
+								}
+							},
 							industrialforegoing: {
 								id: "patchouli:guide_book",
 								Count: 1b,
@@ -54,24 +71,6 @@
 									"akashictome:is_morphing": 1b,
 									display: {
 										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Industrial Foregoing\'s Manual"}]}'
-									}
-								}
-							},
-							tconstruct: {
-								id: "tconstruct:materials_and_you",
-								Count: 1b,
-								tag: {
-									mantle: {
-										book: {
-											current_page: ""
-										}
-									},
-									"akashictome:displayName": {
-										text: "Materials and You"
-									},
-									"akashictome:is_morphing": 1b,
-									display: {
-										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Materials and You"}]}'
 									}
 								}
 							},
@@ -154,6 +153,20 @@
 									}
 								}
 							},
+							pneumaticcraft: {
+								id: "patchouli:guide_book",
+								Count: 1b,
+								tag: {
+									"akashictome:displayName": {
+										text: "PNC:R Manual"
+									},
+									"patchouli:book": "pneumaticcraft:book",
+									"akashictome:is_morphing": 1b,
+									display: {
+										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"PNC:R Manual"}]}'
+									}
+								}
+							},
 							mana-and-artifice: {
 								id: "mana-and-artifice:guide_book",
 								Count: 1b,
@@ -164,6 +177,20 @@
 									"akashictome:is_morphing": 1b,
 									display: {
 										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Codex Arcana"}]}'
+									}
+								}
+							},
+							psi: {
+								id: "patchouli:guide_book",
+								Count: 1b,
+								tag: {
+									"akashictome:displayName": {
+										text: "Encyclopaedia Psionica"
+									},
+									"patchouli:book": "psi:encyclopaedia_psionica",
+									"akashictome:is_morphing": 1b,
+									display: {
+										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Encyclopaedia Psionica"}]}'
 									}
 								}
 							},
@@ -178,6 +205,20 @@
 									"akashictome:is_morphing": 1b,
 									display: {
 										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Woot Guide"}]}'
+									}
+								}
+							},
+							bigreactors: {
+								id: "patchouli:guide_book",
+								Count: 1b,
+								tag: {
+									"akashictome:displayName": {
+										text: "The Extreme Book"
+									},
+									"patchouli:book": "bigreactors:erguide",
+									"akashictome:is_morphing": 1b,
+									display: {
+										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"The Extreme Book"}]}'
 									}
 								}
 							},
@@ -202,6 +243,7 @@
 									"akashictome:displayName": {
 										text: "Lexica Botania"
 									},
+									"botania:elven_unlock": 1b,
 									"akashictome:is_morphing": 1b,
 									display: {
 										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Lexica Botania"}]}'
@@ -218,6 +260,20 @@
 									"akashictome:is_morphing": 1b,
 									display: {
 										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Worn Notebook"}]}'
+									}
+								}
+							},
+							sushigocrafting: {
+								id: "patchouli:guide_book",
+								Count: 1b,
+								tag: {
+									"akashictome:displayName": {
+										text: "Becoming an Itamae (Sushi Go Crafting Manual)"
+									},
+									"patchouli:book": "sushigocrafting:sushigocrafting",
+									"akashictome:is_morphing": 1b,
+									display: {
+										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Becoming an Itamae (Sushi Go Crafting Manual)"}]}'
 									}
 								}
 							},
@@ -284,7 +340,7 @@
 					id: "663B7BAB3CD4951B",
 					type: "command",
 					auto: "no_toast",
-					command: "/say Don't forget to start the Thermal Expansion quests in the quest book!",
+					command: "/w @p Don't forget to start the Thermal Expansion quests in the quest book!",
 					player_command: false
 				}
 			]
@@ -319,7 +375,7 @@
 					id: "2FBEC5D2666BBE18",
 					type: "command",
 					auto: "no_toast",
-					command: "/say Don't forget to start the Applied Energistics quests in the quest book!",
+					command: "/w @p Don't forget to start the Applied Energistics quests in the quest book!",
 					player_command: false
 				}
 			]
@@ -359,7 +415,7 @@
 					id: "6B9180FAF29DC6F4",
 					type: "command",
 					auto: "no_toast",
-					command: "/say Don't forget to start the Industrial Foregoing quests in the quest book!",
+					command: "/w @p Don't forget to start the Industrial Foregoing quests in the quest book!",
 					player_command: false
 				}
 			]
@@ -388,7 +444,7 @@
 					id: "7994EC043A83D874",
 					type: "command",
 					auto: "no_toast",
-					command: "/say Don't forget to start the Mekanism quests in the quest book!",
+					command: "/w @p Don't forget to start the Mekanism quests in the quest book!",
 					player_command: false
 				}
 			]
@@ -417,7 +473,7 @@
 					id: "121174609BC643DD",
 					type: "command",
 					auto: "no_toast",
-					command: "/say Don't forget to start the Pneumaticraft quests in the quest book!",
+					command: "/w @p Don't forget to start the Pneumaticraft quests in the quest book!",
 					player_command: false
 				}
 			]
@@ -468,7 +524,7 @@
 					id: "2FCF1AD91A7D5C3A",
 					type: "command",
 					auto: "no_toast",
-					command: "/say Don't forget to start the Blood Magic quests in the quest book!",
+					command: "/w @p Don't forget to start the Blood Magic quests in the quest book!",
 					player_command: false
 				}
 			]
@@ -496,7 +552,7 @@
 					id: "4A887C9CAEC3252F",
 					type: "command",
 					auto: "no_toast",
-					command: "/say Don't forget to start the Astral Sorcery quests in the quest book!",
+					command: "/w @p Don't forget to start the Astral Sorcery quests in the quest book!",
 					player_command: false
 				}
 			]
@@ -519,7 +575,7 @@
 					id: "68E2B30F71011666",
 					type: "command",
 					auto: "no_toast",
-					command: "/say Don't forget to start the Refined Storage quests in the quest book!",
+					command: "/w @p Don't forget to start the Refined Storage quests in the quest book!",
 					player_command: false
 				},
 				{

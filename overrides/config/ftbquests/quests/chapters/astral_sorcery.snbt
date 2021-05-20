@@ -88,7 +88,7 @@
 					id: "astralsorcery:rock_crystal",
 					Count: 1b,
 					tag: {
-						astralsorcery: {}
+						astralsorcery: { }
 					}
 				}
 			}],
@@ -244,7 +244,7 @@
 					id: "astralsorcery:celestial_crystal",
 					Count: 1b,
 					tag: {
-						astralsorcery: {}
+						astralsorcery: { }
 					}
 				}
 			}],
@@ -345,7 +345,7 @@
 					id: "astralsorcery:mantle",
 					Count: 1b,
 					tag: {
-						astralsorcery: {},
+						astralsorcery: { },
 						Damage: 0
 					}
 				}

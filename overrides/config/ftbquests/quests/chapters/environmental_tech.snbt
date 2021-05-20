@@ -8,7 +8,7 @@
 		id: "envirotech:xerothium_void_miner_ccu",
 		Count: 1b,
 		tag: {
-			colors: {}
+			colors: { }
 		}
 	},
 	default_quest_shape: "",
@@ -282,7 +282,7 @@
 					id: "envirocore:litherite_frame",
 					Count: 1b,
 					tag: {
-						colors: {}
+						colors: { }
 					}
 				}
 			}],
@@ -293,7 +293,7 @@
 					id: "envirocore:structure_panel",
 					Count: 1b,
 					tag: {
-						colors: {}
+						colors: { }
 					}
 				},
 				count: 8
@@ -311,7 +311,7 @@
 					id: "envirocore:erodium_frame",
 					Count: 1b,
 					tag: {
-						colors: {}
+						colors: { }
 					}
 				}
 			}],
@@ -322,7 +322,7 @@
 					id: "envirocore:structure_panel",
 					Count: 1b,
 					tag: {
-						colors: {}
+						colors: { }
 					}
 				},
 				count: 8
@@ -340,7 +340,7 @@
 					id: "envirocore:kyronite_frame",
 					Count: 1b,
 					tag: {
-						colors: {}
+						colors: { }
 					}
 				}
 			}],
@@ -351,7 +351,7 @@
 					id: "envirocore:structure_panel",
 					Count: 1b,
 					tag: {
-						colors: {}
+						colors: { }
 					}
 				},
 				count: 8
@@ -369,7 +369,7 @@
 					id: "envirocore:pladium_frame",
 					Count: 1b,
 					tag: {
-						colors: {}
+						colors: { }
 					}
 				}
 			}],
@@ -380,7 +380,7 @@
 					id: "envirocore:structure_panel",
 					Count: 1b,
 					tag: {
-						colors: {}
+						colors: { }
 					}
 				},
 				count: 8
@@ -398,7 +398,7 @@
 					id: "envirocore:ionite_frame",
 					Count: 1b,
 					tag: {
-						colors: {}
+						colors: { }
 					}
 				}
 			}],
@@ -409,7 +409,7 @@
 					id: "envirocore:structure_panel",
 					Count: 1b,
 					tag: {
-						colors: {}
+						colors: { }
 					}
 				},
 				count: 8
@@ -427,7 +427,7 @@
 					id: "envirocore:aethium_frame",
 					Count: 1b,
 					tag: {
-						colors: {}
+						colors: { }
 					}
 				}
 			}],
@@ -438,7 +438,7 @@
 					id: "envirocore:structure_panel",
 					Count: 1b,
 					tag: {
-						colors: {}
+						colors: { }
 					}
 				},
 				count: 8
@@ -456,7 +456,7 @@
 					id: "envirocore:nanorite_frame",
 					Count: 1b,
 					tag: {
-						colors: {}
+						colors: { }
 					}
 				}
 			}],
@@ -467,7 +467,7 @@
 					id: "envirocore:structure_panel",
 					Count: 1b,
 					tag: {
-						colors: {}
+						colors: { }
 					}
 				},
 				count: 8
@@ -485,7 +485,7 @@
 					id: "envirocore:xerothium_frame",
 					Count: 1b,
 					tag: {
-						colors: {}
+						colors: { }
 					}
 				}
 			}],
@@ -496,7 +496,7 @@
 					id: "envirocore:structure_panel",
 					Count: 1b,
 					tag: {
-						colors: {}
+						colors: { }
 					}
 				},
 				count: 8
@@ -514,7 +514,7 @@
 					id: "envirotech:litherite_void_miner_ccu",
 					Count: 1b,
 					tag: {
-						colors: {}
+						colors: { }
 					}
 				}
 			}],
@@ -537,7 +537,7 @@
 					id: "envirotech:erodium_void_miner_ccu",
 					Count: 1b,
 					tag: {
-						colors: {}
+						colors: { }
 					}
 				}
 			}],
@@ -560,7 +560,7 @@
 					id: "envirotech:kyronite_void_miner_ccu",
 					Count: 1b,
 					tag: {
-						colors: {}
+						colors: { }
 					}
 				}
 			}],
@@ -583,7 +583,7 @@
 					id: "envirotech:pladium_void_miner_ccu",
 					Count: 1b,
 					tag: {
-						colors: {}
+						colors: { }
 					}
 				}
 			}],
@@ -606,7 +606,7 @@
 					id: "envirotech:ionite_void_miner_ccu",
 					Count: 1b,
 					tag: {
-						colors: {}
+						colors: { }
 					}
 				}
 			}],
@@ -629,7 +629,7 @@
 					id: "envirotech:aethium_void_miner_ccu",
 					Count: 1b,
 					tag: {
-						colors: {}
+						colors: { }
 					}
 				}
 			}],
@@ -652,7 +652,7 @@
 					id: "envirotech:nanorite_void_miner_ccu",
 					Count: 1b,
 					tag: {
-						colors: {}
+						colors: { }
 					}
 				}
 			}],
@@ -675,7 +675,7 @@
 					id: "envirotech:xerothium_void_miner_ccu",
 					Count: 1b,
 					tag: {
-						colors: {}
+						colors: { }
 					}
 				}
 			}],
@@ -698,7 +698,7 @@
 					id: "envirocore:lens",
 					Count: 1b,
 					tag: {
-						config: {}
+						config: { }
 					}
 				}
 			}]

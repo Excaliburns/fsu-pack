@@ -4,17 +4,8 @@
 	title: "Seeds",
 	loot_size: 1,
 	rewards: [
-		{
-			item: "appliedenergistics2:certus_crystal_seed",
-			count: 8
-		},
-		{
-			item: "appliedenergistics2:fluix_crystal_seed",
-			count: 8
-		},
-		{
-			item: "appliedenergistics2:nether_quartz_seed",
-			count: 8
-		}
+		{ item: "appliedenergistics2:certus_crystal_seed", count: 8 },
+		{ item: "appliedenergistics2:fluix_crystal_seed", count: 8 },
+		{ item: "appliedenergistics2:nether_quartz_seed", count: 8 }
 	]
 }

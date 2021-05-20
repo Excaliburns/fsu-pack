@@ -411,7 +411,7 @@
 				item: {
 					id: "appliedenergistics2:1k_storage_cell",
 					Count: 1b,
-					tag: {}
+					tag: { }
 				}
 			}]
 		},
@@ -426,7 +426,7 @@
 				item: {
 					id: "appliedenergistics2:4k_storage_cell",
 					Count: 1b,
-					tag: {}
+					tag: { }
 				}
 			}]
 		},
@@ -441,7 +441,7 @@
 				item: {
 					id: "appliedenergistics2:16k_storage_cell",
 					Count: 1b,
-					tag: {}
+					tag: { }
 				}
 			}]
 		},
@@ -456,7 +456,7 @@
 				item: {
 					id: "appliedenergistics2:64k_storage_cell",
 					Count: 1b,
-					tag: {}
+					tag: { }
 				}
 			}]
 		},
@@ -471,7 +471,7 @@
 				item: {
 					id: "appliedenergistics2:64k_storage_cell",
 					Count: 1b,
-					tag: {}
+					tag: { }
 				},
 				count: 10L
 			}]

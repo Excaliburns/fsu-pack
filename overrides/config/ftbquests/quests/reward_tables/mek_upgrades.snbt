@@ -4,13 +4,7 @@
 	title: "Mek Upgrades",
 	loot_size: 1,
 	rewards: [
-		{
-			item: "mekanism:upgrade_speed",
-			count: 2
-		},
-		{
-			item: "mekanism:upgrade_energy",
-			count: 2
-		}
+		{ item: "mekanism:upgrade_speed", count: 2 },
+		{ item: "mekanism:upgrade_energy", count: 2 }
 	]
 }
